@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="userViewModel"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.viewmodel.UserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ll_text_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:theme="@style/TextLabel">
+
+                    <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                        android:id="@+id/edt_name_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name_sign_up"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:text="@{userViewModel.name}"
+                        android:theme="@style/EditTextTheme"
+                        app:clearButtonMode="whileEditing" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:theme="@style/TextLabel">
+
+                    <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                        android:id="@+id/edt_phone_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:text="@{userViewModel.phone}"
+                        android:theme="@style/EditTextTheme"
+                        app:clearButtonMode="whileEditing" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:theme="@style/TextLabel">
+
+                    <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                        android:id="@+id/edt_email_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:text="@={userViewModel.email}"
+                        android:theme="@style/EditTextTheme"
+                        app:clearButtonMode="whileEditing" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:theme="@style/TextLabel"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_pasword_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:text="@{userViewModel.password}"
+                        android:theme="@style/EditTextTheme" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <include
+                    layout="@layout/layout_input_birthday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp" />
+
+                <RadioGroup
+                    android:id="@+id/rad_btn_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    android:theme="@style/MyRadioButtonStyle">
+
+                    <RadioButton
+                        android:id="@+id/rad_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/rab_male" />
+
+                    <RadioButton
+                        android:id="@+id/rad_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/female" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edit_btn_sign_in"
+                    android:text="@string/btn_sign_up"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

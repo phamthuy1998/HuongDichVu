@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+    </data>
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteBG">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb_search_product_detail"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/colorBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/btn_cancel_product_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:linksClickable="true"
+                        android:padding="16dp"
+                        android:tint="@color/colorWhiteBG"
+                        app:srcCompat="@drawable/ic_left_arrow" />
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="@string/name_sign_up"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <include layout="@layout/ll_cart" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_product_detail"
+                android:layout_width="0dp"
+                android:layout_height="400dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tb_search_product_detail" />
+
+
+            <TextView
+                android:id="@+id/tv_name_product_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="@color/colorTextHint"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_product_detail"
+                tools:text="@string/name_sign_up" />
+
+            <TextView
+                android:id="@+id/tv_price_discount_product_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:textColor="@color/colorTextHint"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_product_detail"
+                tools:text="@string/_1_290_000" />
+
+            <TextView
+                android:id="@+id/tv_price_product_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/colorGray"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_price_discount_product_detail"
+                app:layout_constraintStart_toEndOf="@id/tv_price_discount_product_detail"
+                app:layout_constraintTop_toTopOf="@+id/tv_price_discount_product_detail"
+                tools:text="@string/_1_290_000" />
+
+            <TextView
+                android:id="@+id/tv_discount_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:textColor="@color/colorTextHint"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_price_discount_product_detail"
+                app:layout_constraintStart_toEndOf="@id/tv_price_product_detail"
+                app:layout_constraintTop_toTopOf="@+id/tv_price_discount_product_detail"
+                tools:text="10%" />
+
+            <TextView
+                android:id="@+id/tv_out_of_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:layout_marginStart="16dp"
+                android:text="@string/out_of_product"
+                android:textColor="@color/colorRedError"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_price_discount_product_detail" />
+
+            <TextView
+                android:id="@+id/btn_buy_product_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/edit_btn_sign_in"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/choose_to_buy"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhiteBG"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_out_of_product" />
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/product_details"
+                android:textColor="@color/colorTextHint"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_buy_product_detail" />
+
+            <TextView
+                android:id="@+id/tv_content_product_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/content_of_product_detail"
+                android:textColor="@color/colorTextHint"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>
