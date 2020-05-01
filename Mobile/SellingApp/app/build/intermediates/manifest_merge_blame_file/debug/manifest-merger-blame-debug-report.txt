@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="thuypham.n16dccn159.ptithcm.sellingapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml
+10
+11    <!-- Permission will be merged into the manifest of the hosting app. -->
+12    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:8:3-74
+13-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:8:20-72
+14
+15    <application
+15-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:5:5-21:19
+16        android:allowBackup="true"
+16-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:6:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.3.0-beta01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\655e7c147306d4f752142fdd5af01451\core-1.3.0-beta01\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:icon="@mipmap/ic_launcher"
+20-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:7:9-43
+21        android:label="@string/app_name"
+21-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:8:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:9:9-54
+23        android:supportsRtl="true"
+23-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:10:9-35
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:11:9-40
+26        <activity
+26-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:12:9-19:20
+27            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.splash.SplashActivity"
+27-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:12:19-64
+28            android:launchMode="singleTop"
+28-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:13:13-43
+29            android:theme="@style/AppTheme.SplashScreen" >
+29-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:14:13-57
+30            <intent-filter>
+30-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:15:13-18:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:16:17-69
+31-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:16:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:17:17-77
+33-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:17:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity android:name="thuypham.n16dccn159.ptithcm.sellingapp.MainActivity" />
+36-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:20:9-50
+36-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:20:19-47
+37        <activity
+37-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+38            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+38-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+39            android:exported="false"
+39-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+40            android:label=""
+40-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+41            android:theme="@style/EasyPermissions.Transparent" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+41-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+42        <activity
+42-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:5-271
+43            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+43-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:15-102
+44            android:enabled="false"
+44-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:103-126
+45            android:exported="false"
+45-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:127-151
+46            android:launchMode="singleInstance"
+46-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:204-239
+47            android:process=":playcore_missing_splits_activity"
+47-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:152-203
+48            android:stateNotNeeded="true" />
+48-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:240-269
+49        <activity
+49-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:5-226
+50            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+50-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:15-95
+51            android:enabled="false"
+51-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:96-119
+52            android:exported="false"
+52-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:120-144
+53            android:stateNotNeeded="true"
+53-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:145-174
+54            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
+54-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:175-224
+55        <service
+55-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:5-145
+56            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+56-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:14-95
+57            android:enabled="false"
+57-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:96-119
+58            android:exported="true" />
+58-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:120-143
+59    </application>
+60
+61</manifest>
