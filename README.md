@@ -14,7 +14,7 @@ delCartItem (userID, productId) --> trả về trạng thái del
 updateUser() --> trả về trạng thái update thành công hay thất bại
 
 // lấy đơn hàng theo trạng thái đơn hàng
-getOrderByOrderStatus() --> trả về list đơn hàng
+getOrderByOrderStatus(statusId) --> trả về list đơn hàng
 
 // lấy thông tin user 
 getUserInfo(userID: Int) --> trả về thông tin user
