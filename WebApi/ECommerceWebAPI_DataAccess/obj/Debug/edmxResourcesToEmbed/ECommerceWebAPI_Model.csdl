@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="E_COMMERCE_WEB_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Card">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Cards_Products" FromRole="Cards" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="CartItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="ProId" Type="Int32" Nullable="false" />
+    <Property Name="CartId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cart" Relationship="Self.FK__CartItems__CartI__1BFD2C07" FromRole="CartItems" ToRole="Carts" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__CartItems__ProId__1B0907CE" FromRole="CartItems" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CartItems" Relationship="Self.FK__CartItems__CartI__1BFD2C07" FromRole="Carts" ToRole="CartItems" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Carts_Users" FromRole="Carts" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CateId" />
+    </Key>
+    <Property Name="CateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CateName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CateImage" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Display" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Products__CateId__15502E78" FromRole="Categories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="OrderItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Double" Nullable="false" />
+    <Property Name="ProId" Type="Int32" Nullable="false" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_OrderItems_Orders" FromRole="OrderItems" ToRole="Orders" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_OrderItems_Products" FromRole="OrderItems" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="BuyDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="StatusId" Type="Int32" />
+    <NavigationProperty Name="OrderItems" Relationship="Self.FK_OrderItems_Orders" FromRole="Orders" ToRole="OrderItems" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_Orders_Statuses" FromRole="Orders" ToRole="Statuses" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Orders_Users" FromRole="Orders" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stock" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Discount" Type="Double" Nullable="false" />
+    <Property Name="CateId" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="Information" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Display" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Cards" Relationship="Self.FK_Cards_Products" FromRole="Products" ToRole="Cards" />
+    <NavigationProperty Name="CartItems" Relationship="Self.FK__CartItems__ProId__1B0907CE" FromRole="Products" ToRole="CartItems" />
+    <NavigationProperty Name="Category" Relationship="Self.FK__Products__CateId__15502E78" FromRole="Products" ToRole="Categories" />
+    <NavigationProperty Name="OrderItems" Relationship="Self.FK_OrderItems_Products" FromRole="Products" ToRole="OrderItems" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Users_Roles" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatusName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Statuses" FromRole="Statuses" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Avatar" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="Lock" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK_Carts_Users" FromRole="Users" ToRole="Carts" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Users" FromRole="Users" ToRole="Orders" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_Users_Roles" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK_Cards_Products">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="Cards" Type="Self.Card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cards">
+        <PropertyRef Name="ProId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CartItems__CartI__1BFD2C07">
+    <End Role="Carts" Type="Self.Cart" Multiplicity="1" />
+    <End Role="CartItems" Type="Self.CartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CartItems">
+        <PropertyRef Name="CartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CartItems__ProId__1B0907CE">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="CartItems" Type="Self.CartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CartItems">
+        <PropertyRef Name="ProId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Carts_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Carts" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carts">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Products__CateId__15502E78">
+    <End Role="Categories" Type="Self.Category" Multiplicity="1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="CateId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="CateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderItems_Orders">
+    <End Role="Orders" Type="Self.Order" Multiplicity="1" />
+    <End Role="OrderItems" Type="Self.OrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderItems_Products">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="OrderItems" Type="Self.OrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="ProId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Statuses">
+    <End Role="Statuses" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statuses">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Roles">
+    <End Role="Roles" Type="Self.Role" Multiplicity="1" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="E_COMMERCE_WEB_Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cards" EntityType="Self.Card" />
+    <EntitySet Name="CartItems" EntityType="Self.CartItem" />
+    <EntitySet Name="Carts" EntityType="Self.Cart" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="OrderItems" EntityType="Self.OrderItem" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="Statuses" EntityType="Self.Status" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Cards_Products" Association="Self.FK_Cards_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Cards" EntitySet="Cards" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CartItems__CartI__1BFD2C07" Association="Self.FK__CartItems__CartI__1BFD2C07">
+      <End Role="Carts" EntitySet="Carts" />
+      <End Role="CartItems" EntitySet="CartItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CartItems__ProId__1B0907CE" Association="Self.FK__CartItems__ProId__1B0907CE">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="CartItems" EntitySet="CartItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Carts_Users" Association="Self.FK_Carts_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Carts" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products__CateId__15502E78" Association="Self.FK__Products__CateId__15502E78">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderItems_Orders" Association="Self.FK_OrderItems_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderItems_Products" Association="Self.FK_OrderItems_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Statuses" Association="Self.FK_Orders_Statuses">
+      <End Role="Statuses" EntitySet="Statuses" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Users" Association="Self.FK_Orders_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Roles" Association="Self.FK_Users_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <FunctionImport Name="ChangePassword" ReturnType="Collection(E_COMMERCE_WEB_Model.ChangePassword_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+      <Parameter Name="oldPass" Mode="In" Type="String" />
+      <Parameter Name="newPass" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CheckOut" ReturnType="Collection(E_COMMERCE_WEB_Model.CheckOut_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="note" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteCartItem" ReturnType="Collection(E_COMMERCE_WEB_Model.DeleteCartItem_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+      <Parameter Name="productId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllCards" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllCards_Result)" />
+    <FunctionImport Name="GetAllCategories" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllCategories_Result)" />
+    <FunctionImport Name="GetAllOrdersOfUser" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllOrdersOfUser_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllProducts" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllProducts_Result)" />
+    <FunctionImport Name="GetAllProductsOfCart" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllProductsOfCart_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllProductsOfCategory" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllProductsOfCategory_Result)">
+      <Parameter Name="cateId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllSaleProducts" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllSaleProducts_Result)" />
+    <FunctionImport Name="GetCartCount" ReturnType="Collection(Int32)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetOrderByStatus" ReturnType="Collection(E_COMMERCE_WEB_Model.GetOrderByStatus_Result)">
+      <Parameter Name="statusId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetOrderItemByOrder" ReturnType="Collection(E_COMMERCE_WEB_Model.GetOrderItemByOrder_Result)">
+      <Parameter Name="orderId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetProductDetailById" ReturnType="Collection(E_COMMERCE_WEB_Model.GetProductDetailById_Result)">
+      <Parameter Name="productId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="MinusCartItem" ReturnType="Collection(E_COMMERCE_WEB_Model.MinusCartItem_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+      <Parameter Name="productId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PlusCartItem" ReturnType="Collection(E_COMMERCE_WEB_Model.PlusCartItem_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+      <Parameter Name="productId" Mode="In" Type="Int32" />
+      <Parameter Name="quantity" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SignUp" ReturnType="Collection(E_COMMERCE_WEB_Model.SignUp_Result)">
+      <Parameter Name="userName" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(E_COMMERCE_WEB_Model.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(E_COMMERCE_WEB_Model.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="UpdateUserInfo" ReturnType="Collection(E_COMMERCE_WEB_Model.UpdateUserInfo_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="avatar" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserInfoById" ReturnType="Collection(E_COMMERCE_WEB_Model.GetUserInfoById_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Login" ReturnType="Collection(E_COMMERCE_WEB_Model.Login_Result)">
+      <Parameter Name="userName" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="ChangePassword_Result">
+    <Property Type="Int32" Name="result" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="22" />
+  </ComplexType>
+  <ComplexType Name="CheckOut_Result">
+    <Property Type="Int32" Name="result" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="DeleteCartItem_Result">
+    <Property Type="Int32" Name="result" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="GetAllCards_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="ProId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllCategories_Result">
+    <Property Type="Int32" Name="CateId" Nullable="false" />
+    <Property Type="String" Name="CateName" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="CateImage" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Display" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllOrdersOfUser_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Note" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="StatusId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetAllProducts_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="Stock" Nullable="false" />
+    <Property Type="Double" Name="Price" Nullable="false" />
+    <Property Type="Double" Name="Discount" Nullable="false" />
+    <Property Type="Int32" Name="CateId" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Information" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Display" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllProductsOfCart_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="Stock" Nullable="false" />
+    <Property Type="Double" Name="Price" Nullable="false" />
+    <Property Type="Double" Name="Discount" Nullable="false" />
+    <Property Type="Int32" Name="CateId" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Information" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Display" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllProductsOfCategory_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="Stock" Nullable="false" />
+    <Property Type="Double" Name="Price" Nullable="false" />
+    <Property Type="Double" Name="Discount" Nullable="false" />
+    <Property Type="Int32" Name="CateId" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Information" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Display" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllSaleProducts_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="Stock" Nullable="false" />
+    <Property Type="Double" Name="Price" Nullable="false" />
+    <Property Type="Double" Name="Discount" Nullable="false" />
+    <Property Type="Int32" Name="CateId" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Information" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Display" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetOrderByStatus_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Note" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="StatusId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetOrderItemByOrder_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Double" Name="UnitPrice" Nullable="false" />
+    <Property Type="Int32" Name="ProId" Nullable="false" />
+    <Property Type="Int32" Name="OrderId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetProductDetailById_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="Stock" Nullable="false" />
+    <Property Type="Double" Name="Price" Nullable="false" />
+    <Property Type="Double" Name="Discount" Nullable="false" />
+    <Property Type="Int32" Name="CateId" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Information" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Display" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="MinusCartItem_Result">
+    <Property Type="Int32" Name="result" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="PlusCartItem_Result">
+    <Property Type="Int32" Name="result" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="SignUp_Result">
+    <Property Type="Int32" Name="result" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="14" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="UpdateUserInfo_Result">
+    <Property Type="Int32" Name="result" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="21" />
+  </ComplexType>
+  <ComplexType Name="GetUserInfoById_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Phone" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="36" />
+    <Property Type="String" Name="Avatar" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="Boolean" Name="Lock" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Login_Result">
+    <Property Type="Int32" Name="result" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="12" />
+  </ComplexType>
+</Schema>
