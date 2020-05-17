@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background: #f0f0f0 !important;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none !important;
+}
+// .container {
+//   max-width: 1220px !important;
+// }
+
+// header
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  background: #077edb;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+}
+nav ul .dropdown .dropdown-content li {
+  display: block;
+  padding: 0;
+}
+
+// home
+#slider {
+  .owl-dots {
+    position: absolute;
+    bottom: 2%;
+    left: 47%;
+    button {
+      outline: none;
+      span {
+        background: rgba(0, 0, 0, 0.26);
+      }
+      &:hover span {
+        background: red;
+      }
+    }
+    .active span {
+      background: red;
+    }
+  }
+}
+// home products
+.product .price {
+  display: block;
+  overflow: hidden;
+  padding: 5px 10px 10px 10px;
+  strong {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    font-size: 14px;
+    color: #e10c00;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  button {
+    padding-bottom: 5px;
+  }
+}
+.product a {
+  &:hover .img {
+    margin: 6px auto 24px;
+  }
+}
+
+// footer
+.colfoot li a {
+  display: block;
+  color: #288ad6;
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 5px;
+  &:hover {
+    color: #666;
+  }
+}
+.colfoot li p {
+  display: block;
+  padding-top: 5px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+//query media
+@media screen and (max-width: 991) {
+  nav ul li a {
+    font-size: 16px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: #0082e6;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1220px !important;
+  }
+}
