@@ -236,6 +236,11 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="ChangePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userId" Type="int" Mode="In" />
+          <Parameter Name="oldPass" Type="varchar" Mode="In" />
+          <Parameter Name="newPass" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="CheckOut" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userId" Type="int" Mode="In" />
           <Parameter Name="name" Type="nvarchar" Mode="In" />
@@ -243,6 +248,10 @@
           <Parameter Name="email" Type="nvarchar" Mode="In" />
           <Parameter Name="address" Type="nvarchar" Mode="In" />
           <Parameter Name="note" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="DeleteCartItem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userId" Type="int" Mode="In" />
+          <Parameter Name="productId" Type="int" Mode="In" />
         </Function>
         <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
         <Function Name="GetAllCards" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
@@ -259,6 +268,18 @@
         </Function>
         <Function Name="GetAllSaleProducts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="GetCartCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetOrderByStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="statusId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetOrderItemByOrder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="orderId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetProductDetailById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="productId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetUserInfoById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userId" Type="int" Mode="In" />
         </Function>
         <Function Name="Login" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -312,6 +333,14 @@
           <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="UpdateUserInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userId" Type="int" Mode="In" />
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone" Type="nchar" Mode="In" />
+          <Parameter Name="address" Type="nvarchar" Mode="In" />
+          <Parameter Name="avatar" Type="nvarchar" Mode="In" />
+        </Function>
         <EntityContainer Name="E_COMMERCE_WEB_ModelStoreContainer">
           <EntitySet Name="Cards" EntityType="Self.Cards" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CartItems" EntityType="Self.CartItems" Schema="dbo" store:Type="Tables" />
@@ -672,6 +701,11 @@
             <End Role="Roles" EntitySet="Roles" />
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
+          <FunctionImport Name="ChangePassword" ReturnType="Collection(E_COMMERCE_WEB_Model.ChangePassword_Result)">
+            <Parameter Name="userId" Mode="In" Type="Int32" />
+            <Parameter Name="oldPass" Mode="In" Type="String" />
+            <Parameter Name="newPass" Mode="In" Type="String" />
+          </FunctionImport>
           <FunctionImport Name="CheckOut" ReturnType="Collection(E_COMMERCE_WEB_Model.CheckOut_Result)">
             <Parameter Name="userId" Mode="In" Type="Int32" />
             <Parameter Name="name" Mode="In" Type="String" />
@@ -680,6 +714,11 @@
             <Parameter Name="address" Mode="In" Type="String" />
             <Parameter Name="note" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="DeleteCartItem" ReturnType="Collection(E_COMMERCE_WEB_Model.DeleteCartItem_Result)">
+            <Parameter Name="userId" Mode="In" Type="Int32" />
+            <Parameter Name="productId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetAllCards" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllCards_Result)" />
           <FunctionImport Name="GetAllCategories" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllCategories_Result)" />
           <FunctionImport Name="GetAllOrdersOfUser" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllOrdersOfUser_Result)">
           <Parameter Name="userId" Mode="In" Type="Int32" />
@@ -694,6 +733,15 @@
           <FunctionImport Name="GetAllSaleProducts" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllSaleProducts_Result)" />
           <FunctionImport Name="GetCartCount" ReturnType="Collection(Int32)">
           <Parameter Name="userId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetOrderByStatus" ReturnType="Collection(E_COMMERCE_WEB_Model.GetOrderByStatus_Result)">
+          <Parameter Name="statusId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetOrderItemByOrder" ReturnType="Collection(E_COMMERCE_WEB_Model.GetOrderItemByOrder_Result)">
+          <Parameter Name="orderId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetProductDetailById" ReturnType="Collection(E_COMMERCE_WEB_Model.GetProductDetailById_Result)">
+          <Parameter Name="productId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="MinusCartItem" ReturnType="Collection(E_COMMERCE_WEB_Model.MinusCartItem_Result)">
             <Parameter Name="userId" Mode="In" Type="Int32" />
@@ -742,15 +790,38 @@
             <Parameter Name="new_diagramname" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams" />
-          <FunctionImport Name="Login" ReturnType="Collection(E_COMMERCE_WEB_Model.Login_Result1)">
+          <FunctionImport Name="UpdateUserInfo" ReturnType="Collection(E_COMMERCE_WEB_Model.UpdateUserInfo_Result)">
+            <Parameter Name="userId" Mode="In" Type="Int32" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="phone" Mode="In" Type="String" />
+            <Parameter Name="address" Mode="In" Type="String" />
+            <Parameter Name="avatar" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetUserInfoById" ReturnType="Collection(E_COMMERCE_WEB_Model.GetUserInfoById_Result)">
+          <Parameter Name="userId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Login" ReturnType="Collection(E_COMMERCE_WEB_Model.Login_Result)">
             <Parameter Name="userName" Mode="In" Type="String" />
             <Parameter Name="password" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="GetAllCards" ReturnType="Collection(E_COMMERCE_WEB_Model.GetAllCards_Result)" />
         </EntityContainer>
+        <ComplexType Name="ChangePassword_Result">
+          <Property Type="Int32" Name="result" Nullable="false" />
+          <Property Type="String" Name="message" Nullable="false" MaxLength="22" />
+        </ComplexType>
         <ComplexType Name="CheckOut_Result">
           <Property Type="Int32" Name="result" Nullable="false" />
           <Property Type="String" Name="message" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="DeleteCartItem_Result">
+          <Property Type="Int32" Name="result" Nullable="false" />
+          <Property Type="String" Name="message" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="GetAllCards_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="ProId" Nullable="false" />
         </ComplexType>
         <ComplexType Name="GetAllCategories_Result">
           <Property Type="Int32" Name="CateId" Nullable="false" />
@@ -772,13 +843,14 @@
         <ComplexType Name="GetAllProducts_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
           <Property Type="String" Name="Name" Nullable="false" MaxLength="255" />
-          <Property Type="String" Name="CateName" Nullable="false" MaxLength="255" />
           <Property Type="Int32" Name="Stock" Nullable="false" />
           <Property Type="Double" Name="Price" Nullable="false" />
           <Property Type="Double" Name="Discount" Nullable="false" />
+          <Property Type="Int32" Name="CateId" Nullable="false" />
           <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
           <Property Type="String" Name="Information" Nullable="true" MaxLength="2000" />
           <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Display" Nullable="false" />
         </ComplexType>
         <ComplexType Name="GetAllProductsOfCart_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
@@ -816,9 +888,35 @@
           <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
           <Property Type="Boolean" Name="Display" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="Login_Result">
-          <Property Type="Int32" Name="result" Nullable="false" />
-          <Property Type="String" Name="mess" Nullable="false" MaxLength="12" />
+        <ComplexType Name="GetOrderByStatus_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="DateTime" Name="BuyDate" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Note" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetOrderItemByOrder_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="Quantity" Nullable="false" />
+          <Property Type="Double" Name="UnitPrice" Nullable="false" />
+          <Property Type="Int32" Name="ProId" Nullable="false" />
+          <Property Type="Int32" Name="OrderId" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetProductDetailById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="255" />
+          <Property Type="Int32" Name="Stock" Nullable="false" />
+          <Property Type="Double" Name="Price" Nullable="false" />
+          <Property Type="Double" Name="Discount" Nullable="false" />
+          <Property Type="Int32" Name="CateId" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="Information" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Display" Nullable="false" />
         </ComplexType>
         <ComplexType Name="MinusCartItem_Result">
           <Property Type="Int32" Name="result" Nullable="false" />
@@ -843,14 +941,25 @@
           <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
           <Property Type="Int32" Name="OwnerID" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="Login_Result1">
+        <ComplexType Name="UpdateUserInfo_Result">
+          <Property Type="Int32" Name="result" Nullable="false" />
+          <Property Type="String" Name="message" Nullable="false" MaxLength="21" />
+        </ComplexType>
+        <ComplexType Name="GetUserInfoById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Username" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="36" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="RoleId" Nullable="false" />
+          <Property Type="Boolean" Name="Lock" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="Login_Result">
           <Property Type="Int32" Name="result" Nullable="false" />
           <Property Type="String" Name="message" Nullable="false" MaxLength="12" />
-        </ComplexType>
-        <ComplexType Name="GetAllCards_Result">
-          <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
-          <Property Type="Int32" Name="ProId" Nullable="false" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -980,11 +1089,36 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ChangePassword" FunctionName="E_COMMERCE_WEB_Model.Store.ChangePassword">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.ChangePassword_Result">
+                <ScalarProperty Name="result" ColumnName="result" />
+                <ScalarProperty Name="message" ColumnName="message" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="CheckOut" FunctionName="E_COMMERCE_WEB_Model.Store.CheckOut">
             <ResultMapping>
               <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.CheckOut_Result">
                 <ScalarProperty Name="result" ColumnName="result" />
                 <ScalarProperty Name="message" ColumnName="message" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="DeleteCartItem" FunctionName="E_COMMERCE_WEB_Model.Store.DeleteCartItem">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.DeleteCartItem_Result">
+                <ScalarProperty Name="result" ColumnName="result" />
+                <ScalarProperty Name="message" ColumnName="message" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllCards" FunctionName="E_COMMERCE_WEB_Model.Store.GetAllCards">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.GetAllCards_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="ProId" ColumnName="ProId" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -1018,13 +1152,14 @@
               <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.GetAllProducts_Result">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="CateName" ColumnName="CateName" />
                 <ScalarProperty Name="Stock" ColumnName="Stock" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="CateId" ColumnName="CateId" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Information" ColumnName="Information" />
                 <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Display" ColumnName="Display" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -1077,6 +1212,48 @@
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="GetCartCount" FunctionName="E_COMMERCE_WEB_Model.Store.GetCartCount" />
+          <FunctionImportMapping FunctionImportName="GetOrderByStatus" FunctionName="E_COMMERCE_WEB_Model.Store.GetOrderByStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.GetOrderByStatus_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetOrderItemByOrder" FunctionName="E_COMMERCE_WEB_Model.Store.GetOrderItemByOrder">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.GetOrderItemByOrder_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+                <ScalarProperty Name="ProId" ColumnName="ProId" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetProductDetailById" FunctionName="E_COMMERCE_WEB_Model.Store.GetProductDetailById">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.GetProductDetailById_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Stock" ColumnName="Stock" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="CateId" ColumnName="CateId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Information" ColumnName="Information" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Display" ColumnName="Display" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="MinusCartItem" FunctionName="E_COMMERCE_WEB_Model.Store.MinusCartItem">
             <ResultMapping>
               <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.MinusCartItem_Result">
@@ -1125,20 +1302,35 @@
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="E_COMMERCE_WEB_Model.Store.sp_renamediagram" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="E_COMMERCE_WEB_Model.Store.sp_upgraddiagrams" />
-          <FunctionImportMapping FunctionImportName="Login" FunctionName="E_COMMERCE_WEB_Model.Store.Login">
+          <FunctionImportMapping FunctionImportName="UpdateUserInfo" FunctionName="E_COMMERCE_WEB_Model.Store.UpdateUserInfo">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.Login_Result1">
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.UpdateUserInfo_Result">
                 <ScalarProperty Name="result" ColumnName="result" />
                 <ScalarProperty Name="message" ColumnName="message" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="GetAllCards" FunctionName="E_COMMERCE_WEB_Model.Store.GetAllCards">
+          <FunctionImportMapping FunctionImportName="GetUserInfoById" FunctionName="E_COMMERCE_WEB_Model.Store.GetUserInfoById">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.GetAllCards_Result">
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.GetUserInfoById_Result">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Image" ColumnName="Image" />
-                <ScalarProperty Name="ProId" ColumnName="ProId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Lock" ColumnName="Lock" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Login" FunctionName="E_COMMERCE_WEB_Model.Store.Login">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_COMMERCE_WEB_Model.Login_Result">
+                <ScalarProperty Name="result" ColumnName="result" />
+                <ScalarProperty Name="message" ColumnName="message" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

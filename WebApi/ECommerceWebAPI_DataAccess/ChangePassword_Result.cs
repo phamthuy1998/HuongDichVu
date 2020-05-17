@@ -11,17 +11,9 @@ namespace ECommerceWebAPI_DataAccess
 {
     using System;
     
-    public partial class GetAllProducts_Result
+    public partial class ChangePassword_Result
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Stock { get; set; }
-        public double Price { get; set; }
-        public double Discount { get; set; }
-        public int CateId { get; set; }
-        public string Description { get; set; }
-        public string Information { get; set; }
-        public string Image { get; set; }
-        public bool Display { get; set; }
+        public int result { get; set; }
+        public string message { get; set; }
     }
 }

@@ -11,17 +11,16 @@ namespace ECommerceWebAPI_DataAccess
 {
     using System;
     
-    public partial class GetAllProducts_Result
+    public partial class GetOrderByStatus_Result
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
+        public System.DateTime BuyDate { get; set; }
         public string Name { get; set; }
-        public int Stock { get; set; }
-        public double Price { get; set; }
-        public double Discount { get; set; }
-        public int CateId { get; set; }
-        public string Description { get; set; }
-        public string Information { get; set; }
-        public string Image { get; set; }
-        public bool Display { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
+        public string Note { get; set; }
+        public Nullable<int> StatusId { get; set; }
     }
 }

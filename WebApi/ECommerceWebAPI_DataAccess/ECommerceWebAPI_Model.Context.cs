@@ -39,6 +39,23 @@ namespace ECommerceWebAPI_DataAccess
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
     
+        public virtual ObjectResult<ChangePassword_Result> ChangePassword(Nullable<int> userId, string oldPass, string newPass)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("userId", userId) :
+                new ObjectParameter("userId", typeof(int));
+    
+            var oldPassParameter = oldPass != null ?
+                new ObjectParameter("oldPass", oldPass) :
+                new ObjectParameter("oldPass", typeof(string));
+    
+            var newPassParameter = newPass != null ?
+                new ObjectParameter("newPass", newPass) :
+                new ObjectParameter("newPass", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ChangePassword_Result>("ChangePassword", userIdParameter, oldPassParameter, newPassParameter);
+        }
+    
         public virtual ObjectResult<CheckOut_Result> CheckOut(Nullable<int> userId, string name, string phone, string email, string address, string note)
         {
             var userIdParameter = userId.HasValue ?
@@ -66,6 +83,24 @@ namespace ECommerceWebAPI_DataAccess
                 new ObjectParameter("note", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<CheckOut_Result>("CheckOut", userIdParameter, nameParameter, phoneParameter, emailParameter, addressParameter, noteParameter);
+        }
+    
+        public virtual ObjectResult<DeleteCartItem_Result> DeleteCartItem(Nullable<int> userId, Nullable<int> productId)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("userId", userId) :
+                new ObjectParameter("userId", typeof(int));
+    
+            var productIdParameter = productId.HasValue ?
+                new ObjectParameter("productId", productId) :
+                new ObjectParameter("productId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<DeleteCartItem_Result>("DeleteCartItem", userIdParameter, productIdParameter);
+        }
+    
+        public virtual ObjectResult<GetAllCards_Result> GetAllCards()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetAllCards_Result>("GetAllCards");
         }
     
         public virtual ObjectResult<GetAllCategories_Result> GetAllCategories()
@@ -117,6 +152,33 @@ namespace ECommerceWebAPI_DataAccess
                 new ObjectParameter("userId", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("GetCartCount", userIdParameter);
+        }
+    
+        public virtual ObjectResult<GetOrderByStatus_Result> GetOrderByStatus(Nullable<int> statusId)
+        {
+            var statusIdParameter = statusId.HasValue ?
+                new ObjectParameter("statusId", statusId) :
+                new ObjectParameter("statusId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetOrderByStatus_Result>("GetOrderByStatus", statusIdParameter);
+        }
+    
+        public virtual ObjectResult<GetOrderItemByOrder_Result> GetOrderItemByOrder(Nullable<int> orderId)
+        {
+            var orderIdParameter = orderId.HasValue ?
+                new ObjectParameter("orderId", orderId) :
+                new ObjectParameter("orderId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetOrderItemByOrder_Result>("GetOrderItemByOrder", orderIdParameter);
+        }
+    
+        public virtual ObjectResult<GetProductDetailById_Result> GetProductDetailById(Nullable<int> productId)
+        {
+            var productIdParameter = productId.HasValue ?
+                new ObjectParameter("productId", productId) :
+                new ObjectParameter("productId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetProductDetailById_Result>("GetProductDetailById", productIdParameter);
         }
     
         public virtual ObjectResult<MinusCartItem_Result> MinusCartItem(Nullable<int> userId, Nullable<int> productId)
@@ -281,7 +343,45 @@ namespace ECommerceWebAPI_DataAccess
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams");
         }
     
-        public virtual ObjectResult<Login_Result1> Login(string userName, string password)
+        public virtual ObjectResult<UpdateUserInfo_Result> UpdateUserInfo(Nullable<int> userId, string name, string email, string phone, string address, string avatar)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("userId", userId) :
+                new ObjectParameter("userId", typeof(int));
+    
+            var nameParameter = name != null ?
+                new ObjectParameter("name", name) :
+                new ObjectParameter("name", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("email", email) :
+                new ObjectParameter("email", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("phone", phone) :
+                new ObjectParameter("phone", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("address", address) :
+                new ObjectParameter("address", typeof(string));
+    
+            var avatarParameter = avatar != null ?
+                new ObjectParameter("avatar", avatar) :
+                new ObjectParameter("avatar", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<UpdateUserInfo_Result>("UpdateUserInfo", userIdParameter, nameParameter, emailParameter, phoneParameter, addressParameter, avatarParameter);
+        }
+    
+        public virtual ObjectResult<GetUserInfoById_Result> GetUserInfoById(Nullable<int> userId)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("userId", userId) :
+                new ObjectParameter("userId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetUserInfoById_Result>("GetUserInfoById", userIdParameter);
+        }
+    
+        public virtual ObjectResult<Login_Result> Login(string userName, string password)
         {
             var userNameParameter = userName != null ?
                 new ObjectParameter("userName", userName) :
@@ -291,12 +391,7 @@ namespace ECommerceWebAPI_DataAccess
                 new ObjectParameter("password", password) :
                 new ObjectParameter("password", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Login_Result1>("Login", userNameParameter, passwordParameter);
-        }
-    
-        public virtual ObjectResult<GetAllCards_Result> GetAllCards()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetAllCards_Result>("GetAllCards");
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Login_Result>("Login", userNameParameter, passwordParameter);
         }
     }
 }

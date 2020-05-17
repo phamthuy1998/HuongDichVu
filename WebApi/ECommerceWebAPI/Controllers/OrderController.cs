@@ -23,5 +23,17 @@ namespace ECommerceWebAPI.Controllers
             }
             return Ok(order);
         }
+
+        [Route("api/orderByStatus")]
+        [HttpGet]
+        public IHttpActionResult getOrderByStatus(int statusId)
+        {
+            var order = entities.GetOrderByStatus(statusId).ToList();
+            if (order == null)
+            {
+                return NotFound();
+            }
+            return Ok(order);
+        }
     }
 }

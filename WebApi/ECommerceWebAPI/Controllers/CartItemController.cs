@@ -29,5 +29,14 @@ namespace ECommerceWebAPI.Controllers
             var result = entities.PlusCartItem(userId, productId, quantity);
             return Ok(result);
         }
+
+        [Route("api/deleteCartItem")]
+        [AcceptVerbs("GET", "POST")]
+        [HttpDelete]
+        public IHttpActionResult deleteCartItem(int userId, int productId)
+        {
+            var result = entities.DeleteCartItem(userId, productId);
+            return Ok(result);
+        }
     }
 }

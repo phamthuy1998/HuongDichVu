@@ -59,5 +59,18 @@ namespace ECommerceWebAPI.Controllers
             }
             return Ok(product);
         }
+
+        [Route("api/proDetail")]
+        [HttpGet]
+        public IHttpActionResult getProductDetailById(int proId)
+        {
+            var product = entities.GetProductDetailById(proId).ToList();
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
+        }
+
     }
 }

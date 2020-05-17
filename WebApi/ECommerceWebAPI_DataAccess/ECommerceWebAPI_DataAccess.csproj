@@ -66,10 +66,16 @@
     <Compile Include="Category.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="ChangePassword_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="CheckOut_Result.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="DeleteCartItem_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="ECommerceWebAPI_Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -106,10 +112,19 @@
     <Compile Include="GetAllSaleProducts_Result.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Login_Result.cs">
+    <Compile Include="GetOrderByStatus_Result.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Login_Result1.cs">
+    <Compile Include="GetOrderItemByOrder_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetProductDetailById_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserInfoById_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Result.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="MinusCartItem_Result.cs">
@@ -144,6 +159,9 @@
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUserInfo_Result.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">

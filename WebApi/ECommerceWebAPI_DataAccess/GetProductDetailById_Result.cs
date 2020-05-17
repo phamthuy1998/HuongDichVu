@@ -11,7 +11,7 @@ namespace ECommerceWebAPI_DataAccess
 {
     using System;
     
-    public partial class GetAllProducts_Result
+    public partial class GetProductDetailById_Result
     {
         public int Id { get; set; }
         public string Name { get; set; }

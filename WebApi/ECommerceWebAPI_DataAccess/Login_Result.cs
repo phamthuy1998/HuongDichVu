@@ -14,6 +14,6 @@ namespace ECommerceWebAPI_DataAccess
     public partial class Login_Result
     {
         public int result { get; set; }
-        public string mess { get; set; }
+        public string message { get; set; }
     }
 }
