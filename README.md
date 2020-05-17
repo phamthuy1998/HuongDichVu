@@ -17,4 +17,4 @@ updateUser() --> trả về trạng thái update thành công hay thất bại
 getOrderByOrderStatus(statusId) --> trả về list đơn hàng
 
 // lấy thông tin user 
-getUserInfo(userID: Int) --> trả về thông tin user
+getUserInfo(email: String) --> trả về thông tin user
