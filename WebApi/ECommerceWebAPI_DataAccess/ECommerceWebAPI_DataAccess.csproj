@@ -54,6 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CancelOrder_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Card.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
@@ -98,6 +101,9 @@
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="GetAllOrdersOfUser_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllOrderStatus_Result.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="GetAllProductsOfCart_Result.cs">
@@ -147,6 +153,12 @@
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="SignUp_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Status.cs">

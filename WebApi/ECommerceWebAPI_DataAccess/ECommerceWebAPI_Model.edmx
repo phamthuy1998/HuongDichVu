@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ECommerceWebAPI_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ECommerceWebAPI_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Cards">
           <Key>
             <PropertyRef Name="Id" />
@@ -226,6 +226,9 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="CancelOrder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="orderId" Type="int" Mode="In" />
+        </Function>
         <Function Name="ChangePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userId" Type="int" Mode="In" />
           <Parameter Name="oldPass" Type="varchar" Mode="In" />
@@ -248,6 +251,7 @@
         <Function Name="GetAllOrdersOfUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userId" Type="int" Mode="In" />
         </Function>
+        <Function Name="GetAllOrderStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="GetAllProducts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="GetAllProductsOfCart" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userId" Type="int" Mode="In" />
@@ -352,8 +356,7 @@
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ECommerceWebAPI_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -669,30 +672,30 @@
           <FunctionImport Name="GetAllCards" ReturnType="Collection(ECommerceWebAPI_Model.GetAllCards_Result)" />
           <FunctionImport Name="GetAllCategories" ReturnType="Collection(ECommerceWebAPI_Model.GetAllCategories_Result)" />
           <FunctionImport Name="GetAllOrdersOfUser" ReturnType="Collection(ECommerceWebAPI_Model.GetAllOrdersOfUser_Result)">
-            <Parameter Name="userId" Mode="In" Type="Int32" />
+          <Parameter Name="userId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetAllProducts" ReturnType="Collection(ECommerceWebAPI_Model.GetAllProducts_Result)" />
           <FunctionImport Name="GetAllProductsOfCart" ReturnType="Collection(ECommerceWebAPI_Model.GetAllProductsOfCart_Result)">
-            <Parameter Name="userId" Mode="In" Type="Int32" />
+          <Parameter Name="userId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetAllProductsOfCategory" ReturnType="Collection(ECommerceWebAPI_Model.GetAllProductsOfCategory_Result)">
-            <Parameter Name="cateId" Mode="In" Type="Int32" />
+          <Parameter Name="cateId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetAllSaleProducts" ReturnType="Collection(ECommerceWebAPI_Model.GetAllSaleProducts_Result)" />
           <FunctionImport Name="GetCartCount" ReturnType="Collection(Int32)">
-            <Parameter Name="userId" Mode="In" Type="Int32" />
+          <Parameter Name="userId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetOrderByStatus" ReturnType="Collection(ECommerceWebAPI_Model.GetOrderByStatus_Result)">
-            <Parameter Name="statusId" Mode="In" Type="Int32" />
+          <Parameter Name="statusId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetOrderItemByOrder" ReturnType="Collection(ECommerceWebAPI_Model.GetOrderItemByOrder_Result)">
-            <Parameter Name="orderId" Mode="In" Type="Int32" />
+          <Parameter Name="orderId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetProductDetailById" ReturnType="Collection(ECommerceWebAPI_Model.GetProductDetailById_Result)">
-            <Parameter Name="productId" Mode="In" Type="Int32" />
+          <Parameter Name="productId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetUserInfoById" ReturnType="Collection(ECommerceWebAPI_Model.GetUserInfoById_Result)">
-            <Parameter Name="userId" Mode="In" Type="Int32" />
+          <Parameter Name="userId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="Login" ReturnType="Collection(ECommerceWebAPI_Model.Login_Result)">
             <Parameter Name="userName" Mode="In" Type="String" />
@@ -723,6 +726,40 @@
             <Parameter Name="address" Mode="In" Type="String" />
             <Parameter Name="avatar" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="CancelOrder" ReturnType="Collection(ECommerceWebAPI_Model.CancelOrder_Result)">
+          <Parameter Name="orderId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(ECommerceWebAPI_Model.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(ECommerceWebAPI_Model.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+          <FunctionImport Name="GetAllOrderStatus" ReturnType="Collection(ECommerceWebAPI_Model.GetAllOrderStatus_Result)" />
         </EntityContainer>
         <ComplexType Name="ChangePassword_Result">
           <Property Type="Int32" Name="result" Nullable="false" />
@@ -868,6 +905,25 @@
         <ComplexType Name="UpdateUserInfo_Result">
           <Property Type="Int32" Name="result" Nullable="false" />
           <Property Type="String" Name="message" Nullable="false" MaxLength="21" />
+        </ComplexType>
+        <ComplexType Name="CancelOrder_Result">
+          <Property Type="Int32" Name="result" Nullable="false" />
+          <Property Type="String" Name="message" Nullable="false" MaxLength="8" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllOrderStatus_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="StatusName" Nullable="false" MaxLength="50" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1208,7 +1264,23 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-        </EntityContainerMapping>
+          <FunctionImportMapping FunctionImportName="CancelOrder" FunctionName="ECommerceWebAPI_Model.Store.CancelOrder">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.CancelOrder_Result">
+                <ScalarProperty Name="result" ColumnName="result" />
+                <ScalarProperty Name="message" ColumnName="message" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllOrderStatus" FunctionName="ECommerceWebAPI_Model.Store.GetAllOrderStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllOrderStatus_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
   </edmx:Runtime>

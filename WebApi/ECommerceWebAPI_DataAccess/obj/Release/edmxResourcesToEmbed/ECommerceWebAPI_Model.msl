@@ -334,5 +334,21 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CancelOrder" FunctionName="ECommerceWebAPI_Model.Store.CancelOrder">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.CancelOrder_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllOrderStatus" FunctionName="ECommerceWebAPI_Model.Store.GetAllOrderStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllOrderStatus_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

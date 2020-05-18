@@ -35,5 +35,14 @@ namespace ECommerceWebAPI.Controllers
             }
             return Ok(order);
         }
+
+        [Route("api/cancelOrder")]
+        [AcceptVerbs("GET", "POST")]
+        [HttpPut]
+        public IHttpActionResult cancelOrder(int orderId)
+        {
+            var result = entities.CancelOrder(orderId);
+            return Ok(result);
+        }
     }
 }
