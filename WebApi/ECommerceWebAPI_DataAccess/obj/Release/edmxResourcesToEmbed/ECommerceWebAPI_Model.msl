@@ -236,21 +236,6 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="GetCartCount" FunctionName="ECommerceWebAPI_Model.Store.GetCartCount" />
-    <FunctionImportMapping FunctionImportName="GetOrderByStatus" FunctionName="ECommerceWebAPI_Model.Store.GetOrderByStatus">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetOrderByStatus_Result">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Note" ColumnName="Note" />
-          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="GetOrderItemByOrder" FunctionName="ECommerceWebAPI_Model.Store.GetOrderItemByOrder">
       <ResultMapping>
         <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetOrderItemByOrder_Result">
@@ -347,6 +332,21 @@
         <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllOrderStatus_Result">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOrderByStatus" FunctionName="ECommerceWebAPI_Model.Store.GetOrderByStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetOrderByStatus_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

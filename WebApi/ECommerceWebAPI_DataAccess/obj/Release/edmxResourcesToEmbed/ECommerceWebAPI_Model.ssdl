@@ -259,6 +259,7 @@
     <Parameter Name="userId" Type="int" Mode="In" />
   </Function>
   <Function Name="GetOrderByStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userId" Type="int" Mode="In" />
     <Parameter Name="statusId" Type="int" Mode="In" />
   </Function>
   <Function Name="GetOrderItemByOrder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">

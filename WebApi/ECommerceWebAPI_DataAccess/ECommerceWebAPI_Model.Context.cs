@@ -153,15 +153,6 @@ namespace ECommerceWebAPI_DataAccess
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("GetCartCount", userIdParameter);
         }
     
-        public virtual ObjectResult<GetOrderByStatus_Result> GetOrderByStatus(Nullable<int> statusId)
-        {
-            var statusIdParameter = statusId.HasValue ?
-                new ObjectParameter("statusId", statusId) :
-                new ObjectParameter("statusId", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetOrderByStatus_Result>("GetOrderByStatus", statusIdParameter);
-        }
-    
         public virtual ObjectResult<GetOrderItemByOrder_Result> GetOrderItemByOrder(Nullable<int> orderId)
         {
             var orderIdParameter = orderId.HasValue ?
@@ -405,6 +396,19 @@ namespace ECommerceWebAPI_DataAccess
         public virtual ObjectResult<GetAllOrderStatus_Result> GetAllOrderStatus()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetAllOrderStatus_Result>("GetAllOrderStatus");
+        }
+    
+        public virtual ObjectResult<GetOrderByStatus_Result> GetOrderByStatus(Nullable<int> userId, Nullable<int> statusId)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("userId", userId) :
+                new ObjectParameter("userId", typeof(int));
+    
+            var statusIdParameter = statusId.HasValue ?
+                new ObjectParameter("statusId", statusId) :
+                new ObjectParameter("statusId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetOrderByStatus_Result>("GetOrderByStatus", userIdParameter, statusIdParameter);
         }
     }
 }

@@ -325,9 +325,6 @@
     <FunctionImport Name="GetCartCount" ReturnType="Collection(Int32)">
       <Parameter Name="userId" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="GetOrderByStatus" ReturnType="Collection(ECommerceWebAPI_Model.GetOrderByStatus_Result)">
-      <Parameter Name="statusId" Mode="In" Type="Int32" />
-    </FunctionImport>
     <FunctionImport Name="GetOrderItemByOrder" ReturnType="Collection(ECommerceWebAPI_Model.GetOrderItemByOrder_Result)">
       <Parameter Name="orderId" Mode="In" Type="Int32" />
     </FunctionImport>
@@ -400,6 +397,10 @@
     </FunctionImport>
     <FunctionImport Name="sp_upgraddiagrams" />
     <FunctionImport Name="GetAllOrderStatus" ReturnType="Collection(ECommerceWebAPI_Model.GetAllOrderStatus_Result)" />
+    <FunctionImport Name="GetOrderByStatus" ReturnType="Collection(ECommerceWebAPI_Model.GetOrderByStatus_Result)">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+      <Parameter Name="statusId" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="ChangePassword_Result">
     <Property Type="Int32" Name="result" Nullable="false" />
@@ -484,17 +485,6 @@
     <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
     <Property Type="Boolean" Name="Display" Nullable="false" />
   </ComplexType>
-  <ComplexType Name="GetOrderByStatus_Result">
-    <Property Type="Int32" Name="Id" Nullable="false" />
-    <Property Type="Int32" Name="UserId" Nullable="false" />
-    <Property Type="DateTime" Name="BuyDate" Nullable="false" />
-    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Phone" Nullable="true" MaxLength="10" />
-    <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Note" Nullable="true" MaxLength="200" />
-    <Property Type="Int32" Name="StatusId" Nullable="true" />
-  </ComplexType>
   <ComplexType Name="GetOrderItemByOrder_Result">
     <Property Type="Int32" Name="Id" Nullable="false" />
     <Property Type="Int32" Name="Quantity" Nullable="false" />
@@ -564,5 +554,16 @@
   <ComplexType Name="GetAllOrderStatus_Result">
     <Property Type="Int32" Name="Id" Nullable="false" />
     <Property Type="String" Name="StatusName" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="GetOrderByStatus_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Note" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="StatusId" Nullable="true" />
   </ComplexType>
 </Schema>

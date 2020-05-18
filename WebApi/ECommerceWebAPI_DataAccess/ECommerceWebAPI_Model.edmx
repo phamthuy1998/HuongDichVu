@@ -264,6 +264,7 @@
           <Parameter Name="userId" Type="int" Mode="In" />
         </Function>
         <Function Name="GetOrderByStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userId" Type="int" Mode="In" />
           <Parameter Name="statusId" Type="int" Mode="In" />
         </Function>
         <Function Name="GetOrderItemByOrder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -685,9 +686,6 @@
           <FunctionImport Name="GetCartCount" ReturnType="Collection(Int32)">
           <Parameter Name="userId" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="GetOrderByStatus" ReturnType="Collection(ECommerceWebAPI_Model.GetOrderByStatus_Result)">
-          <Parameter Name="statusId" Mode="In" Type="Int32" />
-          </FunctionImport>
           <FunctionImport Name="GetOrderItemByOrder" ReturnType="Collection(ECommerceWebAPI_Model.GetOrderItemByOrder_Result)">
           <Parameter Name="orderId" Mode="In" Type="Int32" />
           </FunctionImport>
@@ -760,6 +758,10 @@
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams" />
           <FunctionImport Name="GetAllOrderStatus" ReturnType="Collection(ECommerceWebAPI_Model.GetAllOrderStatus_Result)" />
+          <FunctionImport Name="GetOrderByStatus" ReturnType="Collection(ECommerceWebAPI_Model.GetOrderByStatus_Result)">
+            <Parameter Name="userId" Mode="In" Type="Int32" />
+            <Parameter Name="statusId" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="ChangePassword_Result">
           <Property Type="Int32" Name="result" Nullable="false" />
@@ -844,17 +846,6 @@
           <Property Type="String" Name="Image" Nullable="true" MaxLength="500" />
           <Property Type="Boolean" Name="Display" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="GetOrderByStatus_Result">
-          <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="Int32" Name="UserId" Nullable="false" />
-          <Property Type="DateTime" Name="BuyDate" Nullable="false" />
-          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="Phone" Nullable="true" MaxLength="10" />
-          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="Note" Nullable="true" MaxLength="200" />
-          <Property Type="Int32" Name="StatusId" Nullable="true" />
-        </ComplexType>
         <ComplexType Name="GetOrderItemByOrder_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
           <Property Type="Int32" Name="Quantity" Nullable="false" />
@@ -924,6 +915,17 @@
         <ComplexType Name="GetAllOrderStatus_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
           <Property Type="String" Name="StatusName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="GetOrderByStatus_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="DateTime" Name="BuyDate" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Note" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1166,21 +1168,6 @@
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="GetCartCount" FunctionName="ECommerceWebAPI_Model.Store.GetCartCount" />
-          <FunctionImportMapping FunctionImportName="GetOrderByStatus" FunctionName="ECommerceWebAPI_Model.Store.GetOrderByStatus">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetOrderByStatus_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="Note" ColumnName="Note" />
-                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="GetOrderItemByOrder" FunctionName="ECommerceWebAPI_Model.Store.GetOrderItemByOrder">
             <ResultMapping>
               <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetOrderItemByOrder_Result">
@@ -1277,6 +1264,21 @@
               <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllOrderStatus_Result">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetOrderByStatus" FunctionName="ECommerceWebAPI_Model.Store.GetOrderByStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetOrderByStatus_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

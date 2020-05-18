@@ -26,9 +26,9 @@ namespace ECommerceWebAPI.Controllers
 
         [Route("api/orderByStatus")]
         [HttpGet]
-        public IHttpActionResult getOrderByStatus(int statusId)
+        public IHttpActionResult getOrderByStatus(int userId, int statusId)
         {
-            var order = entities.GetOrderByStatus(statusId).ToList();
+            var order = entities.GetOrderByStatus(userId, statusId).ToList();
             if (order == null)
             {
                 return NotFound();
