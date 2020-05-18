@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Nam 4\Nam4_2\phat_trien_phan_mem_huong_dich_vu_thay_tru\ECommerceWebAPI\ECommerceWebAPI_DataAccess\ECommerceWebAPI_Model.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Nam 4\Nam4_2\phat_trien_phan_mem_huong_dich_vu_thay_tru\HuongDichVu\WebApi\ECommerceWebAPI_DataAccess\ECommerceWebAPI_Model.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

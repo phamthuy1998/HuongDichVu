@@ -149,16 +149,7 @@
     <Compile Include="SignUp_Result.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Status.cs">
-      <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
       <DependentUpon>ECommerceWebAPI_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="UpdateUserInfo_Result.cs">

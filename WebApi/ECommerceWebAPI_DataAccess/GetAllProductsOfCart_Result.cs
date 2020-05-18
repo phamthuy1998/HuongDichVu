@@ -23,5 +23,6 @@ namespace ECommerceWebAPI_DataAccess
         public string Information { get; set; }
         public string Image { get; set; }
         public bool Display { get; set; }
+        public int Quantity { get; set; }
     }
 }
