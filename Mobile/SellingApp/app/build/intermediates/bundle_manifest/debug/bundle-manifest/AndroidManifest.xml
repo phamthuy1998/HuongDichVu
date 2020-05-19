@@ -8,6 +8,11 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <!-- Permission will be merged into the manifest of the hosting app. -->
     <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -23,22 +28,57 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.order.OrderDetailActivity" />
+        <activity
+            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.order.OrderActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.cart.CartActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.authentication.EditProfileActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.authentication.LoginActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.product.ProductsOfCategoryActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.product.ProductDetailActivity"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.splash.SplashActivity"
             android:launchMode="singleTop"
-            android:theme="@style/AppTheme.SplashScreen" >
+            android:theme="@style/AppTheme.SplashScreen"
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="thuypham.n16dccn159.ptithcm.sellingapp.MainActivity" />
+        <activity android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.main.MainActivity" />
         <activity
             android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
             android:exported="false"
             android:label=""
-            android:theme="@style/EasyPermissions.Transparent" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+            android:theme="@style/EasyPermissions.Transparent" />
+
+        <provider
+            android:name="coil.util.CoilContentProvider"
+            android:authorities="thuypham.n16dccn159.ptithcm.sellingapp.coil"
+            android:exported="false" />
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="thuypham.n16dccn159.ptithcm.sellingapp.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
         <activity
             android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
             android:enabled="false"

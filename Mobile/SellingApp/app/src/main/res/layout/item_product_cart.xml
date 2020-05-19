@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="product"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.data.ProductCart" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/itemProductCart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@color/colorWhiteBG">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_product_cart"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        imageFromUrl="@{product.image}"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorWhiteBG"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_product_cart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        tools:text="@string/tv_name"
+        android:text="@{product.name}"
+        android:textColor="@color/colorTextHint"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/btnDelCart"
+        app:layout_constraintStart_toEndOf="@id/iv_product_cart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnDelCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="15dp"
+        android:src="@drawable/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_price_product_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        price="@{product.price}"
+        discount="@{product.discount}"
+        android:layout_marginTop="10dp"
+        android:text="@string/_1_290_000"
+        android:textColor="@color/colorTextHint"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_product_cart"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_product_cart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text=" -10%"
+        android:layout_marginStart="@dimen/margin_8dp"
+        textDiscount="@{product.discount}"
+        app:layout_constraintStart_toEndOf="@id/tv_price_product_cart"
+        app:layout_constraintTop_toTopOf="@id/tv_price_product_cart"
+        app:layout_constraintBottom_toBottomOf="@id/tv_price_product_cart"
+        />
+
+    <TextView
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorGrayBg"
+        android:paddingStart="16dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="5dp"
+        android:text="@string/btn_minus"
+        android:visibility="@{(product.quantity>1) ? View.VISIBLE : View.GONE}"
+        android:textColor="@color/colorGrayStar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_price_product_cart"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_product_cart" />
+
+    <TextView
+        android:id="@+id/tv_number_pr_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grayLight"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        tools:text="@string/_1"
+        android:text="@{product.quantity.toString()}"
+        android:textColor="@color/colorGrayStar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/btnMinus"
+        app:layout_constraintTop_toTopOf="@id/btnMinus" />
+
+
+    <TextView
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayBg"
+        android:paddingStart="16dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="5dp"
+        android:text="@string/btn_plus"
+        android:visibility="@{(product.quantity&lt;product.stock) ? View.VISIBLE : View.GONE}"
+        android:textColor="@color/colorGrayStar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tv_number_pr_cart"
+        app:layout_constraintTop_toTopOf="@id/tv_number_pr_cart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayBg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout></layout>

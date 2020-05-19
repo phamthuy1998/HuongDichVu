@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.viewmodel.CartViewModel" />
+
+        <variable
+            name="fragment"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.feature.cart.AddressCartFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_add_adress"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorBlue">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBackCartAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:linksClickable="true"
+                android:padding="16dp"
+                android:tint="@color/colorWhiteBG"
+                app:srcCompat="@drawable/ic_left_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_order"
+                android:textColor="@color/colorWhiteBG"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/TextLabel">
+
+            <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                android:id="@+id/edt_name_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_sign_up"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:text="@={viewModel.name}"
+                android:theme="@style/EditTextTheme"
+                app:clearButtonMode="whileEditing" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/TextLabel">
+
+            <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                android:id="@+id/edt_phone_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:text="@={viewModel.phone}"
+                android:theme="@style/EditTextTheme"
+                app:clearButtonMode="whileEditing" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/TextLabel">
+
+            <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_address"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text="@={viewModel.address}"
+                android:theme="@style/EditTextTheme"
+                app:clearButtonMode="whileEditing" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/TextLabel">
+
+            <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                android:id="@+id/edtEmailCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:text="@={viewModel.email}"
+                android:theme="@style/EditTextTheme"
+                app:clearButtonMode="whileEditing" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/TextLabel">
+
+            <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                android:id="@+id/edtNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/note"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:maxLines="10"
+                android:text="@={viewModel.note}"
+                android:theme="@style/EditTextTheme"
+                app:clearButtonMode="whileEditing" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/btnContinueConfirm"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/continue_address"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</layout>

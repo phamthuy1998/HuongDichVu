@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.data.User" />
+
+        <variable
+            name="userViewModel"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.viewmodel.UserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayBg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="16dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="0.2"
+                        app:srcCompat="@drawable/ic_user_profile" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_info_logged"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{user.username}"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/ts_name"
+                            tools:text="User name" />
+
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_blue_right_arrow"
+                            android:singleLine="true"
+                            android:text="@{user.email}"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="@dimen/ts_name"
+                            tools:text="Email" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Order management-->
+                <TextView
+                    android:id="@+id/tv_manage_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:drawableStart="@drawable/ic_order_list"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:text="@string/tv_order_management"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/ts_name" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvOrderStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/item_order_status"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <TextView
+                    android:id="@+id/tv_hot_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:drawableStart="@drawable/ic_headphones"
+                    android:drawableEnd="@drawable/ic_gray_right_arrow"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:text="@string/hot_line_1800_6963_free"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/ts_name" />
+
+                <Button
+                    android:id="@+id/btn_sign_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edt_btn_sign_out"
+                    android:text="@string/sign_out"
+                    android:textColor="@color/colorBlue" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
