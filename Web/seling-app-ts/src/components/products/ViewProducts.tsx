@@ -1,29 +1,35 @@
-import React, { useEffect } from 'react'
-import Title from '../common/Title'
-import Products from './Products'
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getListProducts } from '../../actions/productsAction';
 
-const ViewProducts = () => {
-    const listProduct = useSelector((state: any) => state.productsReducer.products);
+import Products from './Products';
+import Category from '../category/Category';
+
+import { getListCategory, getListProductByCategoryId } from '../../actions/productsAction';
+
+const ViewProducts = (props: any) => {
+    const listCategory = useSelector((state: any) => state.categorysReducer.categorys);
+    const listProsOfCate = useSelector((state: any) => state.categorysReducer.prosOfCate);
+
     const dispatch = useDispatch();
+    let id = props.match.params.id;
+
     useEffect(() => {
-        dispatch(getListProducts())
+        window.scrollTo(0, 0);
+        dispatch(getListCategory());
+        dispatch(getListProductByCategoryId(props.match.params.id));
         return () => { }
-    }, [])
+    }, [id])
     return (
         <div className="container">
             <div>breadcrumb</div>
-            <div className="row">
-                <div className="col-md-3">
-
+            <div className="row ">
+                <div className="col-md-3 bg-white" style={{ marginBottom: '20px' }}>
+                    <Category categorys={listCategory} />
                 </div>
                 <div className="col-md-9">
-                    <Title title="Products" />
-                    <Products products={listProduct} classname="col-sm-6 col-md-4 col-lg-4 pb-3" />
+                    <Products products={listProsOfCate} title="Products" classname="col-sm-6 col-md-4 col-lg-4 pb-3" />
                 </div>
             </div>
-
         </div>
     )
 }

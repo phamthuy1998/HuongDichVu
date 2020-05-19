@@ -49,11 +49,9 @@ const Home: React.FC<Props> = () => {
                     <img src="/images/underSlide.gif" alt="OPPO Reno3 Pro" />
                 </UnderSlider>
                 {/* load product sale list */}
-                <Title title="Products sale" />
-                <Products products={listProductSale} classname="col-sm-6 col-md-4 col-lg-3 pb-3 " />
+                <Products products={listProductSale} title="Products sale" classname="col-sm-6 col-md-4 col-lg-3 pb-3" />
                 {/* load product list */}
-                <Title title="All Products" />
-                <Products products={listProduct} classname="col-sm-6 col-md-4 col-lg-3 pb-3 " />
+                <Products products={listProduct} title="All Products" classname="col-sm-6 col-md-4 col-lg-3 pb-3 " />
             </div>
         </>
     )

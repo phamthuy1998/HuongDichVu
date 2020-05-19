@@ -155,16 +155,13 @@ const Header = React.memo(props => {
                         </Li>
 
                         <Li className="dropdown">
-                            <Link to="/products">Products</Link>
+                            <Link to="#">Products</Link>
                             <Dropdown className="dropdown-content">
                                 <Li >
-                                    <a className="type-product" href="#products1">Products type 1</a>
+                                    <Link to="/products" className="type-product">Products</Link>
                                 </Li>
                                 <Li >
-                                    <a className="type-product" href="#products2">Products type 2</a>
-                                </Li>
-                                <Li >
-                                    <a className="type-product" href="#products3">Products type 3</a>
+                                    <Link to="/products-sale" className="type-product">Products sale</Link>
                                 </Li>
                             </Dropdown>
                         </Li>

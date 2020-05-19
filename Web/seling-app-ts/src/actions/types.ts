@@ -1,5 +1,7 @@
 export const PRODUCTS = "PRODUCTS";
 export const PRODUCTS_SALE = "PRODUCTS_SALE";
+export const CATEGORY = "CATEGORY";
+export const PROS_OF_CATE = "PROS_OF_CATE";
 
 // api url
 export const api_allSalePros = "/allSalePros"; // get all products sale

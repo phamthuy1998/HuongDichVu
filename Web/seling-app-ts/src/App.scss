@@ -73,13 +73,22 @@ nav ul .dropdown .dropdown-content li {
     line-height: 15px;
     padding-bottom: 5px;
   }
-  button {
-    padding-bottom: 5px;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #222;
   }
 }
-.product a {
-  &:hover .img {
-    margin: 6px auto 24px;
+.product {
+  margin-bottom: 20px;
+  a {
+    &:hover .img {
+      margin: 6px auto 24px;
+    }
   }
 }
 
