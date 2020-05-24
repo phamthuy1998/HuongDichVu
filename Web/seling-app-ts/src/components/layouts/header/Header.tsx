@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { device } from '../../common/device';
@@ -8,6 +8,8 @@ import { getCart, deleteItemCart } from '../../../actions/cartAction';
 import { isEmpty } from '../../../commonJS/helperFuncs';
 import { Row } from 'reactstrap';
 import { Product } from '../../../interfaces/productsInterface';
+import classnames from 'classnames';
+
 
 const Topbar = styled.div`
     display: flex;
@@ -85,7 +87,7 @@ const Li = styled.li`
     }
     @media ${device.tabletPro} {
         display: block;
-        margin: 30px 0;
+        margin-top: 30px;
         line-height: 30px;
         &.register, &.login {
             display: block;
@@ -254,7 +256,29 @@ interface Props { }
 const Header: React.FC<Props> = () => {
     const user = useSelector((state: any) => state.userReducer.currentUser);
     const carts = useSelector((state: any) => state.cartReducer.carts);
+    // const [registerClass, setRegisterClass] = useState('');
+    // const [homeClass, setHomeClass] = useState('');
+    // const [loginClass, setLoginClass] = useState('');
+    // const [productClass, setProductClass] = useState('');
     const dispatch = useDispatch();
+    // let pathname = window.location.pathname;
+    // useEffect(() => {
+    //     let pathname = window.location.pathname;
+    //     pathname.match('/') ? setHomeClass("active") : setHomeClass("");
+
+    //     if (pathname.match("/products-sale") || pathname.match("/products")) {
+    //         setProductClass("active");
+    //         console.log(pathname)
+    //     } else {
+    //         setProductClass("");
+    //         console.log(pathname)
+
+    //     }
+    //     pathname.match("/login") ? setLoginClass("active") : setLoginClass("");
+    //     pathname.match("/register") ? setRegisterClass("active") : setRegisterClass("");
+
+    // }, [window.location.pathname]);
+
     useEffect(() => {
         if (user) {
             dispatch(getCart(user.Id));
@@ -286,19 +310,19 @@ const Header: React.FC<Props> = () => {
                     <Logo>PTIT</Logo>
                     <Checkbox id="check" type="checkbox" />
                     <Bar htmlFor="check"><i className="fa fa-bars"></i></Bar>
-                    <Ul>
-                        <Li>
-                            <NavLink className="active" to="/">Home</NavLink>
+                    <Ul className="menu">
+                        <Li className="active">
+                            <Link to="/">Home</Link>
                         </Li>
 
                         <Li className="dropdown">
-                            <NavLink to="#">Products</NavLink>
+                            <Link to="#" >Products</Link>
                             <Dropdown className="dropdown-content">
                                 <Li >
-                                    <Link to="/products" className="type-product">Products</Link>
+                                    <NavLink to="/products" className="type-product">Products</NavLink>
                                 </Li>
                                 <Li >
-                                    <Link to="/products-sale" className="type-product">Products sale</Link>
+                                    <NavLink to="/products-sale" className="type-product">Products sale</NavLink>
                                 </Li>
                             </Dropdown>
                         </Li>
@@ -361,10 +385,10 @@ const Header: React.FC<Props> = () => {
                                     </ActionAccount>
                                 </Li>
                                 <Li className="register">
-                                    <Link to="/register">Register</Link>
+                                    <NavLink to="/register">Register</NavLink>
                                 </Li>
                                 <Li className="login">
-                                    <Link to="/login">Login</Link>
+                                    <NavLink to="/login">Login</NavLink>
                                 </Li>
                             </>
                             :

@@ -9,10 +9,11 @@ export const LOGOUT = "LOGOUT";
 export const GET_ERRORS = "GET_ERRORS";
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
 export const CART = "CART";
+export const BANNER = "BANNER";
 
 // api url
 export const api_allSalePros = "/allSalePros"; // get all products sale
 export const api_allPros = "/allPros"; // get all products
 export const api_allCates = "/allCates"; // get all category
-
+export const api_banner = `/allCards`; // get banner
 

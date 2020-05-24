@@ -1,4 +1,4 @@
-import { PRODUCTS, PRODUCTS_SALE, PRODUCT_DETAIL } from '../actions/types';
+import { PRODUCTS, PRODUCTS_SALE, PRODUCT_DETAIL, BANNER } from '../actions/types';
 export interface ProductsState {
     products: any[],
     products_sale: any[],
@@ -35,8 +35,14 @@ interface GetProductDetailAction {
     product: Product
 }
 
+interface GetBannerAction {
+    type: typeof BANNER,
+    banner: any[]
+}
+
 
 export type ProductsActionTypes =
     GetProductsAction
     | GetProductsSaleAction
-    | GetProductDetailAction;
+    | GetProductDetailAction
+    | GetBannerAction;

@@ -54,7 +54,7 @@ const App: React.FC<Props> = () => {
 
         <Switch>
           <Route path="/allProsOfCate/:id" component={ViewProducts} />
-          <Route path="/products" component={ViewProducts} />
+          <Route path="/products" exact component={ViewProducts} />
         </Switch>
       </Switch>
       <Footer />

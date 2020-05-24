@@ -21,8 +21,8 @@ const ViewProducts = (props: any) => {
     }, [id])
     return (
         <div className="container">
-            <div>breadcrumb</div>
-            <div className="row ">
+            {/* <div className="mt-4">breadcrumb</div> */}
+            <div className="row mt-4">
                 <div className="col-md-3 bg-white" style={{ marginBottom: '20px' }}>
                     <Category categorys={listCategory} />
                 </div>

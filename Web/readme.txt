@@ -76,15 +76,18 @@ List<Status>allOrderStatus
 -- http://ecommerceweb2020.azurewebsites.net/api/minusCartItem?userId={userId}&productId={productId}
 -- http://ecommerceweb2020.azurewebsites.net/api/checkOut?userId={userId}&name={name}&phone={phone}&email={email}&address={address}&note={note}
 -- http://ecommerceweb2020.azurewebsites.net/api/updateUser?userId={userId}&name={name}&email={email}&phone={phone}&address={address}&avatar={avatar}
+-- http://ecommerceweb2020.azurewebsites.net/api/changePassword?userId={userId}&oldPass={oldPass}&newPass={newPass}
 
 
 
 ------------ TODO ------------------------
 
--> Accout : detail user + edit user
--- add nav link to header -> set active menu
--- change Toast to sweetalert
+
+-- add nav link to header -> set active menu // chuwa dc
+-- load slider
 https://salitha94.blogspot.com/2019/02/implement-sweet-alerts-with-react-js.html
+
+
 
 
 

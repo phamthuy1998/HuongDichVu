@@ -13,7 +13,7 @@ const ViewProductSale = () => {
     }, [])
     return (
         <div className="container">
-            <div>breadcrumb</div>
+            <div className="my-4"></div>
             <Products products={listProductSale} title="Products sale" classname="col-sm-6 col-md-4 col-lg-3 pb-3 " />
         </div>
     )

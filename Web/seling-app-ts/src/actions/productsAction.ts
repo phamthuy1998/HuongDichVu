@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {
-    api_allSalePros, api_allPros, api_allCates,
-    PRODUCTS, PRODUCTS_SALE, CATEGORY, PROS_OF_CATE, PRODUCT_DETAIL
+    api_allSalePros, api_allPros, api_allCates, api_banner,
+    PRODUCTS, PRODUCTS_SALE, CATEGORY, PROS_OF_CATE, PRODUCT_DETAIL, BANNER
 } from './types';
 import { Product } from '../interfaces/productsInterface';
 import { isEmpty, formatMoney } from '../commonJS/helperFuncs';
@@ -72,6 +72,17 @@ export const getProductDetail = (id: number) => async (dispatch: any) => {
     }
 }
 
+// get banner
+export const banner = () => async (dispatch: any) => {
+    let res = await axios.get(api_banner);
+    if (res.data) {
+        dispatch({
+            type: BANNER,
+            banner: res.data
+        })
+    }
+}
+
 // helper function in this class
 export const formatProduct = (array: Product[]) => {
     array.forEach((product) => {
@@ -80,3 +91,4 @@ export const formatProduct = (array: Product[]) => {
         // product.Description = subString(product.Description, 100);
     });
 }
+
