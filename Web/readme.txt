@@ -13,12 +13,6 @@ Lấy chi tiết sản phẩm theo Id(int proId): GET http://ecommerceweb2020.az
 Product(Id, Name, Stock, Price,...)
 
 User:
-Đăng nhập(string userName,string password): GET http://ecommerceweb2020.azurewebsites.net/api/login?userName={userName}&password={password}
--1: sai username
--2: đúng userName, sai password
-userId: đăng nhập thành công
-Lấy thông tin user theo userId (int userId): GET http://ecommerceweb2020.azurewebsites.net/api/userInfoById?userId={userId}
-User(Id, Name, UserName, ...)
 Đăng ký(string userName, string password, string name, string email, string phone, string address): POST http://ecommerceweb2020.azurewebsites.net/api/signUp?userName={userName}&password={password}&name={name}&email={email}&phone={phone}&address={address}
 -1: trùng userName
 -2: trùng email
@@ -73,10 +67,24 @@ List<Status>allOrderStatus
 -- http://localhost:52551/api/allProsOfCate?cateId={cateId}
 -- http://localhost:52551/api/allSalePros
 -- http://localhost:52551/api/allCates
+-- http://ecommerceweb2020.azurewebsites.net/api/proDetail?proId={proId}
+-- http://ecommerceweb2020.azurewebsites.net/api/login?userName={userName}&password={password}
+-- http://ecommerceweb2020.azurewebsites.net/api/userInfoById?userId={userId}
+-- http://ecommerceweb2020.azurewebsites.net/api/signUp?userName={userName}&password={password}&name={name}&email={email}&phone={phone}&address={address}
+-- http://ecommerceweb2020.azurewebsites.net/api/plusCartItem?userId={userId}&productId={productId}&quantity={quantity}
+-- http://ecommerceweb2020.azurewebsites.net/api/allProsOfCart?userId={userId}
+-- http://ecommerceweb2020.azurewebsites.net/api/minusCartItem?userId={userId}&productId={productId}
+-- http://ecommerceweb2020.azurewebsites.net/api/checkOut?userId={userId}&name={name}&phone={phone}&email={email}&address={address}&note={note}
+-- http://ecommerceweb2020.azurewebsites.net/api/updateUser?userId={userId}&name={name}&email={email}&phone={phone}&address={address}&avatar={avatar}
+
+
 
 ------------ TODO ------------------------
--- exist current user 
--> Accout : detail + logout
+
+-> Accout : detail user + edit user
 -- add nav link to header -> set active menu
--- add scroll to product type
-====> go on detail product, login, register
+-- change Toast to sweetalert
+https://salitha94.blogspot.com/2019/02/implement-sweet-alerts-with-react-js.html
+
+
+

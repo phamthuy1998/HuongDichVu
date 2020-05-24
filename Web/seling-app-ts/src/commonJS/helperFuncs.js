@@ -18,3 +18,7 @@ export const subString = (text, maxLength = 50) => {
         return text.substr(0, maxLength) + "...";
     }
 }
+
+export const formatMoney = (money) => {
+    return (money + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+} 

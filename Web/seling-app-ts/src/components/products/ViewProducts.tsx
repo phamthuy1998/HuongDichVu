@@ -16,7 +16,7 @@ const ViewProducts = (props: any) => {
     useEffect(() => {
         window.scrollTo(0, 0);
         dispatch(getListCategory());
-        dispatch(getListProductByCategoryId(props.match.params.id));
+        dispatch(getListProductByCategoryId(id));
         return () => { }
     }, [id])
     return (

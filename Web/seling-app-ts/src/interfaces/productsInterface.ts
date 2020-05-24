@@ -1,7 +1,8 @@
-import { PRODUCTS, PRODUCTS_SALE, CATEGORY } from '../actions/types';
+import { PRODUCTS, PRODUCTS_SALE, PRODUCT_DETAIL } from '../actions/types';
 export interface ProductsState {
     products: any[],
-    products_sale: any[]
+    products_sale: any[],
+    product: any
 }
 
 export interface Product {
@@ -15,7 +16,8 @@ export interface Product {
     Image: string,
     Stock: number,
     Display: boolean,
-    Promotion: number
+    Promotion: string,
+    Cost: string
 }
 
 interface GetProductsAction {
@@ -28,13 +30,13 @@ interface GetProductsSaleAction {
     products_sale: any[]
 }
 
-interface GetCategoryAction {
-    type: typeof CATEGORY,
-    categorys: any[]
+interface GetProductDetailAction {
+    type: typeof PRODUCT_DETAIL,
+    product: Product
 }
 
 
 export type ProductsActionTypes =
     GetProductsAction
     | GetProductsSaleAction
-    | GetCategoryAction;
+    | GetProductDetailAction;

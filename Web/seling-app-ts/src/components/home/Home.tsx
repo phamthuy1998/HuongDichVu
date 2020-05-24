@@ -8,7 +8,6 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { getListProducts, getListProductsSale } from '../../actions/productsAction';
 import Products from '../products/Products';
-import Title from '../common/Title';
 
 const Item = styled.div``;
 
@@ -17,9 +16,10 @@ const UnderSlider = styled.div`
 `;
 
 interface Props {
-
+    // props: any;
 }
-const Home: React.FC<Props> = () => {
+const Home: React.FC<Props> = (props) => {
+    const user = useSelector((state: any) => state.userReducer.currentUser);
     const listProductSale = useSelector((state: any) => state.productsReducer.products_sale);
     const listProduct = useSelector((state: any) => state.productsReducer.products);
     const dispatch = useDispatch();
@@ -28,6 +28,8 @@ const Home: React.FC<Props> = () => {
         dispatch(getListProducts());
         return () => { }
     }, [])
+
+    console.log("home", props);
     return (
         <>
             <OwlCarousel id="slider"
@@ -42,6 +44,7 @@ const Home: React.FC<Props> = () => {
                 <Item className="item"><img className="img" src={'/images/slider3.png'} /></Item>
                 <Item className="item"><img className="img" src={'/images/slider4.png'} /></Item>
             </OwlCarousel>
+
 
             {/* load product by category */}
             <div className="container">

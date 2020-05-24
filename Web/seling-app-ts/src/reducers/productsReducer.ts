@@ -1,8 +1,10 @@
-import { PRODUCTS, PRODUCTS_SALE } from '../actions/types';
+import { PRODUCTS, PRODUCTS_SALE, PRODUCT_DETAIL } from '../actions/types';
 import { ProductsActionTypes, ProductsState } from '../interfaces/productsInterface';
+
 const initialState: ProductsState = {
     products: [],
-    products_sale: []
+    products_sale: [],
+    product: null
 }
 
 const productsReducer = (state = initialState, action: ProductsActionTypes) => {
@@ -12,6 +14,9 @@ const productsReducer = (state = initialState, action: ProductsActionTypes) => {
         }
         case PRODUCTS_SALE: {
             return { ...state, products_sale: action.products_sale }
+        }
+        case PRODUCT_DETAIL: {
+            return { ...state, product: action.product }
         }
         default: return state;
     }
