@@ -3,7 +3,7 @@ Gom bài môn hướng dịch vụ - Hệ thống bán hàng online
 
 Giảng viên hướng dẫn: Ths. Huỳnh Trung Trụ  
 
-Web Api(C#): Lê Hồng Quân - N16DCCN126
+Web Api (C#): Lê Hồng Quân - N16DCCN126
 
 Mobile (Android): Phạm Thị Thủy - N16DCCN159
 
