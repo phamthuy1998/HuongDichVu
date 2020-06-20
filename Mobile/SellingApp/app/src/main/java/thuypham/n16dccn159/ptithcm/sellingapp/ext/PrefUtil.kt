@@ -2,6 +2,7 @@ package thuypham.n16dccn159.ptithcm.sellingapp.ext
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.preference.PreferenceManager
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import thuypham.n16dccn159.ptithcm.sellingapp.data.User
@@ -55,6 +56,11 @@ fun Context.getBooleanPref(valueName: String): Boolean {
     val pref = getSharedPreferences(PREFS_NAME, AppCompatActivity.MODE_PRIVATE)
     return pref.getBoolean(valueName, false)
 }
+
+
+var Context.darkMode
+    get() = this.getIntPref("THEME")
+    set(value) = this.setIntPref("THEME", value)
 
 fun Context.setIntPref(valueName: String, value: Int) {
     val pref: SharedPreferences = getSharedPreferences(PREFS_NAME, AppCompatActivity.MODE_PRIVATE)

@@ -16,7 +16,7 @@
     <string name="billing_information">Thông tin thanh toán</string>
     <string name="btn_sign_up">Đăng ký</string>
     <string name="email">Email</string>
-    <string name="email_phone_number">Email hoặc số điện thoại</string>
+    <string name="email_phone_number"><font size="30">Email hoặc số điện thoại</font></string>
     <string name="favorite_product">Sản phẩm yêu thích</string>
     <string name="female">Nữ</string>
     <string name="forgot_password">Quên mật khẩu?</string>

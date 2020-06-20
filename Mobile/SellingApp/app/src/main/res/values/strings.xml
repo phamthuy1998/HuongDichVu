@@ -36,7 +36,7 @@
     <string name="sign_out">Sign out</string>
     <string name="update">Update</string>
     <string name="title_sign_in_sign_up">Sign in/Sign up</string>
-    <string name="email_phone_number">Email/phone number</string>
+    <string name="email_phone_number"><font size="30">Email hoặc số điện thoại</font></string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="or_sign_in_with">Or sign in with</string>
@@ -208,5 +208,6 @@
     <string name="user_name">User name</string>
     <string name="note">Note</string>
     <string name="address_order">Address order</string>
+    <string name="change_theme">Change theme</string>
 
 </resources>

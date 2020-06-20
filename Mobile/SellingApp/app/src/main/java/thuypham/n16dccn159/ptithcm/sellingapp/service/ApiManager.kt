@@ -10,11 +10,8 @@ import thuypham.n16dccn159.ptithcm.sellingapp.data.*
 
 interface ApiManager {
     companion object {
-//        private const val localhost = "192.168.1.19"
-//        private const val BASE_URL = "http://$localhost:800/api/"
 
-        private const val API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        private const val BASE_URL = "http://ecommerceweb2020.azurewebsites.net/api/"
+        private const val BASE_URL = "http://192.168.1.131:800/api/"
 
         fun create(): ApiManager {
             val logger = HttpLoggingInterceptor()
@@ -32,13 +29,6 @@ interface ApiManager {
                 .create(ApiManager::class.java)
         }
     }
-
-//    @GET("now_playing")
-//    fun getMovie(
-//        @Query("api_key") apiKey: String,
-//        @Query("page") page: Int
-//    ): Call<ResultApi>
-
 
     @GET("login")
     fun login(

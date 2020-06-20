@@ -1397,6 +1397,8 @@ id btnBackProductDetail
 id btnBackProducts
 id btnBuy
 id btnCancelOrder
+id btnChangeMode
+id btnChangeTheme
 id btnContinueConfirm
 id btnContinueShopping
 id btnDelCart
@@ -1973,6 +1975,7 @@ string cart
 string cart_empty
 string change
 string change_pasword
+string change_theme
 string character_counter_content_description
 string character_counter_pattern
 string check_verifire_mail

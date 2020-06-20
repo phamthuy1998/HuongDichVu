@@ -69,10 +69,10 @@ class SearchFragment : Fragment() {
 //        }
         productAdapter.search(strSearch, onNothingFound={
             productAdapter.removeAllData()
-            ll_search_empty.visible()
+            ll_search_empty?.visible()
         }, onSearchResult={
             productAdapter.addDataSearch(it)
-            ll_search_empty.gone()
+            ll_search_empty?.gone()
         })
     }
 

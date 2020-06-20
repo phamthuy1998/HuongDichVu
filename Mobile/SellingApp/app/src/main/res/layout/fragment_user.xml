@@ -106,10 +106,21 @@
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
                 <TextView
-                    android:id="@+id/tv_hot_line"
+                    android:id="@+id/btnChangeMode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:drawableEnd="@drawable/ic_gray_right_arrow"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:text="@string/change_theme"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/ts_name" />
+                <TextView
+                    android:id="@+id/tv_hot_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:background="@android:color/white"
                     android:drawableStart="@drawable/ic_headphones"
                     android:drawableEnd="@drawable/ic_gray_right_arrow"

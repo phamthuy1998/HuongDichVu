@@ -73,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/email_phone_number"
                     android:inputType="textEmailAddress"
+                    android:textSize="15sp"
                     android:singleLine="true"
                     android:text="@={userViewModel.email}"
                     android:theme="@style/EditTextTheme"

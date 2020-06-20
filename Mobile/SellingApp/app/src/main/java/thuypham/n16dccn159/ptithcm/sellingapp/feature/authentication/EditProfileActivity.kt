@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.observe
@@ -30,7 +32,69 @@ class EditProfileActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_edit_profile)
         userViewModel.getInfoUser(getIntPref(USER_ID) ?: 0)
         bindViewModel()
+        checkTheme()
+        addEvents()
     }
+
+    private fun addEvents() {
+        binding.btnChangeTheme.setOnClickListener {
+            showDialogChooseModeTheme()
+        }
+    }
+
+    private fun checkTheme() {
+        when (darkMode) {
+            0 -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                delegate.applyDayNight()
+            }
+            1 -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                delegate.applyDayNight()
+            }
+            2 -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+                delegate.applyDayNight()
+            }
+        }
+    }
+
+    private fun showDialogChooseModeTheme() {
+        val builder = AlertDialog.Builder(this)
+        val styles = arrayOf("Light", "Dark", "System default")
+        val checkedItem = darkMode
+
+        builder.setSingleChoiceItems(styles, checkedItem) { dialog, which ->
+
+            when (which) {
+                0 -> {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    darkMode = 0
+                    delegate.applyDayNight()
+                    dialog.dismiss()
+                }
+                1 -> {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    darkMode = 1
+//                    delegate.applyDayNight()
+                    dialog.dismiss()
+                }
+                2 -> {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+                    darkMode = 2
+//                    delegate.applyDayNight()
+                    dialog.dismiss()
+                }
+
+            }
+
+//            recreate()
+        }
+
+        val dialog = builder.create()
+        dialog.show()
+    }
+
 
     private fun bindViewModel() {
         userViewModel.userInfo.observe(this) {

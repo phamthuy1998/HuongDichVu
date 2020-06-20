@@ -4,12 +4,14 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -128,20 +130,23 @@ class UserFragment : Fragment() {
              placeholder()
              error()
          }*/
-        tv_manage_order.setOnClickListener {
+        binding.tvManageOrder.setOnClickListener {
             startActivity<OrderActivity>()
         }
 
-        btn_sign_out.setOnClickListener { confirmSignOut() }
+        binding.btnSignOut.setOnClickListener { confirmSignOut() }
 
-        tv_hot_line.setOnClickListener {
+        binding.tvHotLine.setOnClickListener {
             callPhoneNumber()
         }
 
-        ll_info_logged.setOnClickListener {
+        binding.llInfoLogged.setOnClickListener {
             startActivity<EditProfileActivity>()
         }
+
     }
+
+
 
     private fun confirmSignOut() {
         val builder = AlertDialog.Builder(requireContext())

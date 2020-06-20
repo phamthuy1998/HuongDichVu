@@ -120,16 +120,16 @@
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_like.xml"
     },
     {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_order.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_order.xml"
+    },
+    {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_search.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_search.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_view_more.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_view_more.xml"
-    },
-    {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_order.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_order.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search.xml.flat",
@@ -164,12 +164,12 @@
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\once_point_five_stars.png"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_select_user.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_select_user.xml"
-    },
-    {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_rounded_corner_red.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_rounded_corner_red.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_select_user.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_select_user.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_map_marker.xml.flat",
@@ -328,12 +328,12 @@
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_add.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_splash_screen.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_splash_screen.xml"
-    },
-    {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_product_order.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_product_order.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_splash_screen.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_splash_screen.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_user.xml.flat",

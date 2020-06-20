@@ -30,7 +30,7 @@
 18-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:8:20-72
 19
 20    <application
-20-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:10:5-48:19
+20-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:10:5-49:19
 21        android:allowBackup="true"
 21-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:11:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -46,143 +46,145 @@
 28        android:supportsRtl="true"
 28-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:15:9-35
 29        android:testOnly="true"
-30        android:theme="@style/AppTheme" >
-30-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:16:9-40
-31        <activity android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.order.OrderDetailActivity" />
-31-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:17:9-80
-31-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:17:19-68
-32        <activity
-32-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:18:9-20:55
-33            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.order.OrderActivity"
-33-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:19:13-56
-34            android:windowSoftInputMode="adjustPan" />
-34-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:20:13-52
-35        <activity
-35-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:21:9-23:55
-36            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.cart.CartActivity"
-36-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:22:13-54
-37            android:windowSoftInputMode="adjustPan" />
-37-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:23:13-52
-38        <activity
-38-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:24:9-26:55
-39            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.authentication.EditProfileActivity"
-39-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:25:13-71
-40            android:windowSoftInputMode="adjustPan" />
-40-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:26:13-52
-41        <activity
-41-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:27:9-29:55
-42            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.authentication.LoginActivity"
-42-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:28:13-65
-43            android:windowSoftInputMode="adjustPan" />
-43-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:29:13-52
-44        <activity
-44-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:30:9-32:55
-45            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.product.ProductsOfCategoryActivity"
-45-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:31:13-71
-46            android:windowSoftInputMode="adjustPan" />
-46-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:32:13-52
-47        <activity
-47-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:33:9-35:55
-48            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.product.ProductDetailActivity"
-48-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:34:13-66
-49            android:windowSoftInputMode="adjustPan" />
-49-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:35:13-52
-50        <activity
-50-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:36:9-46:20
-51            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.splash.SplashActivity"
-51-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:37:13-58
-52            android:launchMode="singleTop"
-52-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:38:13-43
-53            android:theme="@style/AppTheme.SplashScreen"
-53-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:39:13-57
-54            android:windowSoftInputMode="adjustPan" >
-54-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:40:13-52
-55            <intent-filter>
-55-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:41:13-45:29
-56                <action android:name="android.intent.action.MAIN" />
-56-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:42:17-69
-56-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:42:25-66
-57
-58                <category android:name="android.intent.category.LAUNCHER" />
-58-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:44:17-77
-58-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:44:27-74
-59            </intent-filter>
-60        </activity>
-61        <activity android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.main.MainActivity" />
-61-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:47:9-63
-61-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:47:19-60
-62        <activity
-62-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
-63            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-63-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
-64            android:exported="false"
-64-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
-65            android:label=""
-65-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
-66            android:theme="@style/EasyPermissions.Transparent" />
-66-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
-67
-68        <provider
-68-->[io.coil-kt:coil:0.9.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0ad18e5151ea3ca27d7fef57f6134119\jetified-coil-0.9.5\AndroidManifest.xml:10:9-13:40
-69            android:name="coil.util.CoilContentProvider"
-69-->[io.coil-kt:coil:0.9.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0ad18e5151ea3ca27d7fef57f6134119\jetified-coil-0.9.5\AndroidManifest.xml:11:13-57
-70            android:authorities="thuypham.n16dccn159.ptithcm.sellingapp.coil"
-70-->[io.coil-kt:coil:0.9.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0ad18e5151ea3ca27d7fef57f6134119\jetified-coil-0.9.5\AndroidManifest.xml:12:13-56
-71            android:exported="false" />
-71-->[io.coil-kt:coil:0.9.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0ad18e5151ea3ca27d7fef57f6134119\jetified-coil-0.9.5\AndroidManifest.xml:13:13-37
-72        <provider
-72-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-73            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-73-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-74            android:authorities="thuypham.n16dccn159.ptithcm.sellingapp.lifecycle-process"
-74-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-75            android:exported="false"
-75-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-76            android:multiprocess="true" />
-76-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-77
-78        <service
-78-->[androidx.room:room-runtime:2.2.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\999480bd266ddc4f4caad3c937cd7449\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
-79            android:name="androidx.room.MultiInstanceInvalidationService"
-79-->[androidx.room:room-runtime:2.2.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\999480bd266ddc4f4caad3c937cd7449\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
-80            android:directBootAware="true"
-80-->[androidx.room:room-runtime:2.2.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\999480bd266ddc4f4caad3c937cd7449\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
-81            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-81-->[androidx.room:room-runtime:2.2.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\999480bd266ddc4f4caad3c937cd7449\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
-82        <activity
-82-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:5-271
-83            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-83-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:15-102
-84            android:enabled="false"
-84-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:103-126
-85            android:exported="false"
-85-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:127-151
-86            android:launchMode="singleInstance"
-86-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:204-239
-87            android:process=":playcore_missing_splits_activity"
-87-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:152-203
-88            android:stateNotNeeded="true" />
-88-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:240-269
-89        <activity
-89-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:5-226
-90            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-90-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:15-95
-91            android:enabled="false"
-91-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:96-119
-92            android:exported="false"
-92-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:120-144
-93            android:stateNotNeeded="true"
-93-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:145-174
-94            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
-94-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:175-224
-95        <service
-95-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:5-145
-96            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-96-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:14-95
-97            android:enabled="false"
-97-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:96-119
-98            android:exported="true" />
-98-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:120-143
-99    </application>
-100
-101</manifest>
+30        android:theme="@style/AppTheme"
+30-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:17:9-40
+31        android:usesCleartextTraffic="true" >
+31-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:16:9-44
+32        <activity android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.order.OrderDetailActivity" />
+32-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:18:9-71
+32-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:18:19-68
+33        <activity
+33-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:19:9-21:55
+34            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.order.OrderActivity"
+34-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:20:13-56
+35            android:windowSoftInputMode="adjustPan" />
+35-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:21:13-52
+36        <activity
+36-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:22:9-24:55
+37            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.cart.CartActivity"
+37-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:23:13-54
+38            android:windowSoftInputMode="adjustPan" />
+38-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:24:13-52
+39        <activity
+39-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:25:9-27:55
+40            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.authentication.EditProfileActivity"
+40-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:26:13-71
+41            android:windowSoftInputMode="adjustPan" />
+41-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:27:13-52
+42        <activity
+42-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:28:9-30:55
+43            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.authentication.LoginActivity"
+43-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:29:13-65
+44            android:windowSoftInputMode="adjustPan" />
+44-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:30:13-52
+45        <activity
+45-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:31:9-33:55
+46            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.product.ProductsOfCategoryActivity"
+46-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:32:13-71
+47            android:windowSoftInputMode="adjustPan" />
+47-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:33:13-52
+48        <activity
+48-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:34:9-36:55
+49            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.product.ProductDetailActivity"
+49-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:35:13-66
+50            android:windowSoftInputMode="adjustPan" />
+50-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:36:13-52
+51        <activity
+51-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:37:9-47:20
+52            android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.splash.SplashActivity"
+52-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:38:13-58
+53            android:launchMode="singleTop"
+53-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:39:13-43
+54            android:theme="@style/AppTheme.SplashScreen"
+54-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:40:13-57
+55            android:windowSoftInputMode="adjustPan" >
+55-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:41:13-52
+56            <intent-filter>
+56-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:42:13-46:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:43:17-69
+57-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:43:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:45:17-77
+59-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:45:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity android:name="thuypham.n16dccn159.ptithcm.sellingapp.feature.main.MainActivity" />
+62-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:48:9-63
+62-->D:\Thuy\tai lieu tren lop\HuongDichVu\SellingApp\SellingApp\app\src\main\AndroidManifest.xml:48:19-60
+63        <activity
+63-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+64            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+64-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+65            android:exported="false"
+65-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+66            android:label=""
+66-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+67            android:theme="@style/EasyPermissions.Transparent" />
+67-->[pub.devrel:easypermissions:3.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\118e9645680e45263d4982d279eb26f8\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+68
+69        <provider
+69-->[io.coil-kt:coil:0.9.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0ad18e5151ea3ca27d7fef57f6134119\jetified-coil-0.9.5\AndroidManifest.xml:10:9-13:40
+70            android:name="coil.util.CoilContentProvider"
+70-->[io.coil-kt:coil:0.9.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0ad18e5151ea3ca27d7fef57f6134119\jetified-coil-0.9.5\AndroidManifest.xml:11:13-57
+71            android:authorities="thuypham.n16dccn159.ptithcm.sellingapp.coil"
+71-->[io.coil-kt:coil:0.9.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0ad18e5151ea3ca27d7fef57f6134119\jetified-coil-0.9.5\AndroidManifest.xml:12:13-56
+72            android:exported="false" />
+72-->[io.coil-kt:coil:0.9.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0ad18e5151ea3ca27d7fef57f6134119\jetified-coil-0.9.5\AndroidManifest.xml:13:13-37
+73        <provider
+73-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+74            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+75            android:authorities="thuypham.n16dccn159.ptithcm.sellingapp.lifecycle-process"
+75-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+76            android:exported="false"
+76-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+77            android:multiprocess="true" />
+77-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\947784002ee3beb119b03fab89e29848\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+78
+79        <service
+79-->[androidx.room:room-runtime:2.2.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\999480bd266ddc4f4caad3c937cd7449\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+80            android:name="androidx.room.MultiInstanceInvalidationService"
+80-->[androidx.room:room-runtime:2.2.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\999480bd266ddc4f4caad3c937cd7449\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+81            android:directBootAware="true"
+81-->[androidx.room:room-runtime:2.2.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\999480bd266ddc4f4caad3c937cd7449\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+82            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+82-->[androidx.room:room-runtime:2.2.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\999480bd266ddc4f4caad3c937cd7449\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+83        <activity
+83-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:5-271
+84            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+84-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:15-102
+85            android:enabled="false"
+85-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:103-126
+86            android:exported="false"
+86-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:127-151
+87            android:launchMode="singleInstance"
+87-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:204-239
+88            android:process=":playcore_missing_splits_activity"
+88-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:152-203
+89            android:stateNotNeeded="true" />
+89-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:12:240-269
+90        <activity
+90-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:5-226
+91            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+91-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:15-95
+92            android:enabled="false"
+92-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:96-119
+93            android:exported="false"
+93-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:120-144
+94            android:stateNotNeeded="true"
+94-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:145-174
+95            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
+95-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:13:175-224
+96        <service
+96-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:5-145
+97            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+97-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:14-95
+98            android:enabled="false"
+98-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:96-119
+99            android:exported="true" />
+99-->[com.google.android.play:core:1.7.2] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\478cc3843e358013744d1f18b8056bd6\jetified-core-1.7.2\AndroidManifest.xml:16:120-143
+100    </application>
+101
+102</manifest>

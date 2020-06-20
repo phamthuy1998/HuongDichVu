@@ -52,7 +52,7 @@
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:maxLines="1"
-            android:text="@{product.name}"
+            android:text="@{`đ`+product.name}"
             android:textColor="@color/colorTextHint"
             android:textSize="14sp" />
 
