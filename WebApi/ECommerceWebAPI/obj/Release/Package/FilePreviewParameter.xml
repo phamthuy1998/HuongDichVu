@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ecommerceweb2020" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Nam\ 4\\Nam4_2\\phat_trien_phan_mem_huong_dich_vu_thay_tru\\HuongDichVu\\WebApi\\ECommerceWebAPI\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Nam\ 4\\Nam4_2\\phat_trien_phan_mem_huong_dich_vu_thay_tru\\HuongDichVu\\WebApi\\ECommerceWebAPI\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="DefaultConnection_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Nam\ 4\\Nam4_2\\phat_trien_phan_mem_huong_dich_vu_thay_tru\\HuongDichVu\\WebApi\\ECommerceWebAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="E_COMMERCE_WEB_Entities-Web.config Connection String" description="" value="metadata=res://*/ECommerceWebAPI_Model.csdl|res://*/ECommerceWebAPI_Model.ssdl|res://*/ECommerceWebAPI_Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=MARK-21;initial catalog=E_COMMERCE_WEB;persist security info=True;user id=sa;password=123456;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Nam\ 4\\Nam4_2\\phat_trien_phan_mem_huong_dich_vu_thay_tru\\HuongDichVu\\WebApi\\ECommerceWebAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='E_COMMERCE_WEB_Entities']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="E_COMMERCE_WEB_Entities-Web.config Connection String" description="E_COMMERCE_WEB_Entities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:thegioidientu.database.windows.net,1433;Initial Catalog=ecommerceweb;Persist Security Info=False;User ID=ecommerceweb;Password=h0il@mgj;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Nam\ 4\\Nam4_2\\phat_trien_phan_mem_huong_dich_vu_thay_tru\\HuongDichVu\\WebApi\\ECommerceWebAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='E_COMMERCE_WEB_Entities']/@connectionString" />
+  </parameter>
+</parameters>

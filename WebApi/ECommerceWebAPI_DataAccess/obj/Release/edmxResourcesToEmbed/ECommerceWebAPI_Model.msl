@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ECommerceWebAPI_ModelStoreContainer" CdmEntityContainer="E_COMMERCE_WEB_Entities">
+    <EntitySetMapping Name="Cards">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.Card">
+        <MappingFragment StoreEntitySet="Cards">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CartItems">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.CartItem">
+        <MappingFragment StoreEntitySet="CartItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="CartId" ColumnName="CartId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.Cart">
+        <MappingFragment StoreEntitySet="Carts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="CateName" ColumnName="CateName" />
+          <ScalarProperty Name="CateImage" ColumnName="CateImage" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItems">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.OrderItem">
+        <MappingFragment StoreEntitySet="OrderItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statuses">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.Status">
+        <MappingFragment StoreEntitySet="Statuses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ECommerceWebAPI_Model.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Lock" ColumnName="Lock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CancelOrder" FunctionName="ECommerceWebAPI_Model.Store.CancelOrder">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.CancelOrder_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ChangePassword" FunctionName="ECommerceWebAPI_Model.Store.ChangePassword">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.ChangePassword_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CheckOut" FunctionName="ECommerceWebAPI_Model.Store.CheckOut">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.CheckOut_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteCartItem" FunctionName="ECommerceWebAPI_Model.Store.DeleteCartItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.DeleteCartItem_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllCards" FunctionName="ECommerceWebAPI_Model.Store.GetAllCards">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllCards_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllCategories" FunctionName="ECommerceWebAPI_Model.Store.GetAllCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllCategories_Result">
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="CateName" ColumnName="CateName" />
+          <ScalarProperty Name="CateImage" ColumnName="CateImage" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllOrdersOfUser" FunctionName="ECommerceWebAPI_Model.Store.GetAllOrdersOfUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllOrdersOfUser_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllOrderStatus" FunctionName="ECommerceWebAPI_Model.Store.GetAllOrderStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllOrderStatus_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllProducts" FunctionName="ECommerceWebAPI_Model.Store.GetAllProducts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllProducts_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllProductsOfCart" FunctionName="ECommerceWebAPI_Model.Store.GetAllProductsOfCart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllProductsOfCart_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllProductsOfCategory" FunctionName="ECommerceWebAPI_Model.Store.GetAllProductsOfCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllProductsOfCategory_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllSaleProducts" FunctionName="ECommerceWebAPI_Model.Store.GetAllSaleProducts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetAllSaleProducts_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCartCount" FunctionName="ECommerceWebAPI_Model.Store.GetCartCount" />
+    <FunctionImportMapping FunctionImportName="GetOrderByStatus" FunctionName="ECommerceWebAPI_Model.Store.GetOrderByStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetOrderByStatus_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOrderItemByOrder" FunctionName="ECommerceWebAPI_Model.Store.GetOrderItemByOrder">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetOrderItemByOrder_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetProductDetailById" FunctionName="ECommerceWebAPI_Model.Store.GetProductDetailById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetProductDetailById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUserInfoById" FunctionName="ECommerceWebAPI_Model.Store.GetUserInfoById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.GetUserInfoById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Lock" ColumnName="Lock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Login" FunctionName="ECommerceWebAPI_Model.Store.Login">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.Login_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MinusCartItem" FunctionName="ECommerceWebAPI_Model.Store.MinusCartItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.MinusCartItem_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PlusCartItem" FunctionName="ECommerceWebAPI_Model.Store.PlusCartItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.PlusCartItem_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SignUp" FunctionName="ECommerceWebAPI_Model.Store.SignUp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.SignUp_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UpdateUserInfo" FunctionName="ECommerceWebAPI_Model.Store.UpdateUserInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ECommerceWebAPI_Model.UpdateUserInfo_Result">
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
