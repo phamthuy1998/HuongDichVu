@@ -18,5 +18,7 @@ namespace ECommerceWebAPI_DataAccess
         public double UnitPrice { get; set; }
         public int ProId { get; set; }
         public int OrderId { get; set; }
+        public string Name { get; set; }
+        public string Image { get; set; }
     }
 }
