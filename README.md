@@ -1,20 +1,10 @@
 # HuongDichVu
-Gom bài môn hướng dịch vụ, Huỳnh Trung Trụ PTITHCM 
+Gom bài môn hướng dịch vụ - Hệ thống bán hàng online
 
-Thêm api
+Giảng viên hướng dẫn: Ths. Huỳnh Trung Trụ  
 
-// Bắt buộc phải có đủ thêm xóa sửa (thầy yêu cầu)
+Web Api(C#): Lê Hồng Quân - N16DCCN126
 
-getProductDetailByID (idProduct) --> trả về thông tin product
+Mobile (Android): Phạm Thị Thủy - N16DCCN159
 
-
-delCartItem (userID, productId) --> trả về trạng thái del
-
-
-updateUser() --> trả về trạng thái update thành công hay thất bại
-
-// lấy đơn hàng theo trạng thái đơn hàng
-getOrderByOrderStatus(statusId) --> trả về list đơn hàng
-
-// lấy thông tin user 
-getUserInfo(email: String) --> trả về thông tin user
+Web (react): Lê Thị Thu - N16DCCN158
