@@ -1,5 +1,5 @@
 # HuongDichVu
-Gom bài môn hướng dịch vụ - Hệ thống bán hàng online
+Phát triển phần mềm hướng dịch vụ - Hệ thống bán hàng online
 
 Giảng viên hướng dẫn: Ths. Huỳnh Trung Trụ  
 
