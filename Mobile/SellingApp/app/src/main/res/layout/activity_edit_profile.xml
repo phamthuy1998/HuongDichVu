@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.viewmodel.UserViewModel" />
+
+        <variable
+            name="user"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.data.User" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayBg">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_back_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:linksClickable="true"
+                android:onClick="onBack"
+                android:padding="16dp"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_left_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/account_information"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnChangeTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:linksClickable="true"
+                android:onClick="onBack"
+                android:padding="16dp"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_left_arrow" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_save_change_edit"
+            app:layout_constraintTop_toBottomOf="@id/tbEditProfile">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ECEBEB" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ll_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:theme="@style/TextLabel">
+
+                        <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                            android:id="@+id/edtUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/user_name"
+                            android:inputType="textPersonName"
+                            android:singleLine="true"
+                            android:text="@{user.username}"
+                            android:theme="@style/EditTextTheme"
+                            app:clearButtonMode="whileEditing" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ll_text_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:theme="@style/TextLabel">
+
+                        <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                            android:id="@+id/edtNameEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/name_sign_up"
+                            android:inputType="textPersonName"
+                            android:singleLine="true"
+                            android:text="@{user.name}"
+                            android:theme="@style/EditTextTheme"
+                            app:clearButtonMode="whileEditing" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:theme="@style/TextLabel">
+
+                        <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                            android:id="@+id/edtPhoneEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/phone"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:text="@{user.phone}"
+                            android:theme="@style/EditTextTheme"
+                            app:clearButtonMode="whileEditing" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:theme="@style/TextLabel">
+
+                        <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                            android:id="@+id/edtEmailEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:text="@{user.email}"
+                            android:theme="@style/EditTextTheme"
+                            app:clearButtonMode="whileEditing" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:theme="@style/TextLabel">
+
+                        <thuypham.n16dccn159.ptithcm.sellingapp.widget.EditTextField
+                            android:id="@+id/edtAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/address"
+                            android:inputType="textPostalAddress"
+                            android:singleLine="true"
+                            android:text="@{user.address}"
+                            android:theme="@style/EditTextTheme"
+                            app:clearButtonMode="whileEditing" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrayBg"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cbChangePw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F8F8F8"
+                        android:onClick="onCheckChangePassword"
+                        android:padding="16dp"
+                        android:text="@string/change_pasword"
+                        android:textColor="@color/colorTextHint"
+                        android:textSize="18sp"
+                        android:theme="@style/checkBoxStyle" />
+
+                    <LinearLayout
+                        android:id="@+id/llEditPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhiteBG"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <!--Old password-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:theme="@style/TextLabel"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/colorGray">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edtOldPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/old_password"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:textSize="16sp"
+                                android:theme="@style/EditTextTheme" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--New password-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:theme="@style/TextLabel"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/colorGray">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edtNewPass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/new_password"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:textSize="16sp"
+                                android:theme="@style/EditTextTheme" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--New password-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:theme="@style/TextLabel"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/colorGray">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edtReNewPass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/retype_new_password"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:textSize="16sp"
+                                android:theme="@style/EditTextTheme" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_save_change_edit"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:linksClickable="true"
+            android:onClick="onClickChangeInfo"
+            android:text="@string/save_changes"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

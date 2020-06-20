@@ -1,63 +1,239 @@
 [
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_two_stars.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_two_stars.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_right.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_btn_rounded_corner.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_btn_rounded_corner.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cart.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_cart.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_no_search.jpg.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\no_search.jpg"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_anim_splash.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\anim_splash.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_select_like.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_select_like.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_category.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_category.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_splash_screen.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_splash_screen.xml"
-    },
-    {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_three_dots.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_three_dots.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_left.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_in_left.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_success.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_order_success.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_product_detail.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_product_detail.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_login.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\navigation\\nav_login.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_sign_up.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_sign_up.xml"
-    },
-    {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fl.jpeg.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\fl.jpeg"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_fragment_home.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_fragment_home.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_product_sale.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_product_sale.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_once_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\once_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_shopping_cart.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_shopping_cart.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_product_cart.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_product_cart.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_down.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_down.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_up.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_left_arrow.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_left_arrow.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_selected_notification.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_selected_notification.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_credit_card.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_credit_card.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_like.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_like.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_order.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_order.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_search.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_view_more.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_view_more.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_input_birthday.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\layout_input_birthday.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_headphones.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_headphones.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_user.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_history.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_history.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_success.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_success.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_image_item_category.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\edit_image_item_category.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_once_point_five_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\once_point_five_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_rounded_corner_red.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_rounded_corner_red.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_select_user.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_select_user.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_map_marker.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_map_marker.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_threes_point_five_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\threes_point_five_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_two_point_five_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\two_point_five_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_right.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_bird.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_bird.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_category.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_category.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_start_two_color.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_start_two_color.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_verified_mail.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_verified_mail.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edt_btn_count_number.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\edt_btn_count_number.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_select_notification.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_select_notification.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_seach_bg.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\edit_seach_bg.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_selected_category.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_selected_category.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -68,10 +244,6 @@
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cursor.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_cursor.xml"
-    },
-    {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
@@ -80,63 +252,343 @@
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_category.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_category.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_down.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_down.xml"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_order_detail.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_order_detail.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_login.xml"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_product.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_product.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_up.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_up.xml"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_zero_point_five_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\zero_point_five_stars.png"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_forgot_password.xml.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_forgot_password.xml"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_sign_in_up.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_sign_in_up.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_left.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_out_left.xml"
     },
     {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_profile.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_error.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_error.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_selected_home.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_selected_home.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_product_in_category.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_product_in_category.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_rounded_corner_stroke.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_rounded_corner_stroke.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cart.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cancel.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\cancel.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_no_wifi.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_no_wifi.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_two_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\two_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edt_number_cart.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\edt_number_cart.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_product_order.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_product_order.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_splash_screen.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_splash_screen.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_user.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_user.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_sign_up.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_sign_up.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_sale.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_sale.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user_profile.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_user_profile.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_five_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\five_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cancel.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_cancel.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_bookmark.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_bookmark.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_confirm_order.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_confirm_order.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_no_voucher.jpg.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\no_voucher.jpg"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_shipping.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_shipping.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_order_status.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_order_status.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_refresh_indicator.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_refresh_indicator.png"
+    },
+    {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_cart_logo.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\icon_cart_logo.png"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_order_list.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_order_list.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_slidingimages_layout_home.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\slidingimages_layout_home.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_text_search_hot_key_word.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\edit_text_search_hot_key_word.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_comment.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_comment.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_gray_right_arrow.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_gray_right_arrow.xml"
     },
     {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\anim\\slide_in_right.xml"
     },
     {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_bot_nav_bar.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\menu\\bot_nav_bar.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_select_search.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_select_search.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_bottom_sheet_add_cart.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\bottom_sheet_add_cart.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_address_cart.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_address_cart.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_selected_search.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_selected_search.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_four_point_five_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\four_point_five_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_facebook.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_facebook.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_select_home.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_select_home.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_selected_user.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_selected_user.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_ll_cart.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\ll_cart.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_select_category.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_select_category.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_rounded_corner_stroke_sign_up.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_rounded_corner_stroke_sign_up.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_product_confirm.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\item_product_confirm.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_blue_right_arrow.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_blue_right_arrow.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_four_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\four_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_circle_arrow.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_circle_arrow.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notification.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_notification.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_three_stars.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\three_stars.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cursor.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_cursor.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edt_btn_sign_out.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\edt_btn_sign_out.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_launcher.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\bg_launcher.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_btn_sign_in.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\edit_btn_sign_in.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_forgot_password.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\fragment_forgot_password.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_google.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_google.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_cart_logo.png.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\icon_cart_logo.png"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_liked.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_liked.xml"
+    },
+    {
         "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_logo.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_logo.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_order.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\layout\\activity_order.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_eye.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_eye.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_star.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_star.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_like_gray.xml.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_like_gray.xml"
+    },
+    {
+        "merged": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_hot_key.jpg.flat",
+        "source": "D:\\Thuy\\tai lieu tren lop\\HuongDichVu\\SellingApp\\SellingApp\\app\\src\\main\\res\\drawable\\ic_hot_key.jpg"
     }
 ]

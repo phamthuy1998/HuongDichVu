@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="android:configChanges">keyboardHidden|orientation|screenSize</item>
+        <item name="colorPrimary">@color/colorBlueLight</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+        <item name="colorAccent">@color/colorBlueDark</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="cursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/ic_cursor</item>
+    </style>
+
+    <style name="AppTheme.SplashScreen" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_splash_screen</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+
+
+    <style name="Btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator" tools:targetApi="lollipop">@null</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:padding">15dp</item>
+    </style>
+    <style name="Button" parent="Btn">
+        <item name="android:background">@drawable/bg_btn_rounded_corner</item>
+    </style>
+
+    <style name="BtnSignUp" parent="Btn">
+        <item name="background">@drawable/bg_rounded_corner_stroke_sign_up</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorGray</item>
+        <item name="colorControlActivated">@color/colorBlue</item>
+        <item name="colorControlHighlight">@color/colorBlue</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#6E6D6D</item>
+        <item name="android:textSize">16sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorGray</item>
+        <item name="colorControlNormal">@color/colorBlue</item>
+        <item name="colorControlActivated">@color/colorBlue</item>
+    </style>
+
+    <style name="MyRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+
+        <item name="android:textSize">16sp</item>
+
+        <!--Color normal-->
+        <item name="colorPrimary">@color/colorGray</item>
+        <!--Color when click-->
+        <item name="colorControlActivated">@color/colorBlue</item>
+    </style>
+
+
+    <!--Checkbox color style-->
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="android:textColorSecondary">@color/colorGray</item>
+    </style>
+
+
+</resources>

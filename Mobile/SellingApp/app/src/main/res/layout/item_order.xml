@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ll_item_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_line_item_order"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name_item_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="@string/name_sign_up"
+            android:textColor="@color/colorTextHint"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_line_item_order" />
+
+        <TextView
+            android:id="@+id/tv_tt_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/order_id"
+            app:layout_constraintStart_toStartOf="@id/tv_name_item_order"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_item_order" />
+
+        <TextView
+            android:id="@+id/tv_item_order_detail_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            tools:text="@string/order_id"
+            app:layout_constraintStart_toEndOf="@id/tv_tt_order_id"
+            app:layout_constraintTop_toTopOf="@id/tv_tt_order_id" />
+
+        <TextView
+            android:id="@+id/tv_tt_order_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/order_date"
+            app:layout_constraintStart_toStartOf="@id/tv_name_item_order"
+            app:layout_constraintTop_toBottomOf="@id/tv_tt_order_id" />
+
+        <TextView
+            android:id="@+id/tv_item_order_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            tools:text="@string/order_id"
+            app:layout_constraintStart_toEndOf="@id/tv_tt_order_detail_date"
+            app:layout_constraintTop_toTopOf="@id/tv_tt_order_detail_date" />
+
+        <TextView
+            android:id="@+id/tv_tt_order_detail_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/order_status"
+            app:layout_constraintStart_toStartOf="@id/tv_name_item_order"
+            app:layout_constraintTop_toBottomOf="@id/tv_tt_order_detail_date" />
+
+        <TextView
+            android:id="@+id/tv_item_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="16dp"
+            tools:text="@string/order_id"
+            app:layout_constraintStart_toEndOf="@id/tv_tt_order_detail_status"
+            app:layout_constraintTop_toTopOf="@id/tv_tt_order_detail_status" />
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/iv_order_ic_status"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/tv_item_order_detail_id"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/tv_item_order_detail_id"-->
+<!--            app:srcCompat="@drawable/ic_success" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

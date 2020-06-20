@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="product"
+            type="thuypham.n16dccn159.ptithcm.sellingapp.data.Product" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/itemProductSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorWhiteBG"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_image_product_sale"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                imageFromUrl="@{product.image}"
+                android:background="@color/colorWhiteBG"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_product_sale_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:background="@drawable/edit_btn_sign_in"
+                android:gravity="center"
+                android:padding="1dp"
+                textDiscount="@{product.discount}"
+                android:textColor="@color/colorWhiteBG"
+                android:textSize="13sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name_product_sale"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@{`đ`+product.name}"
+            android:textColor="@color/colorTextHint"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_price_product_favorite"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            price="@{product.price}"
+            discount="@{product.discount}"
+            android:textColor="@color/colorTextHint"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>
