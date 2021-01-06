@@ -18,7 +18,7 @@
     "@types/reactstrap": "^8.4.2",
     "@types/styled-components": "^5.1.0",
     "@types/webpack-env": "^1.15.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
